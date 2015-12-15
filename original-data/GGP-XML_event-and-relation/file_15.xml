@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<!DOCTYPE Annotation PUBLIC "-//GENIA//DTD GENIA ANNOTATION EVENT 2.0//EN" "../GENIAtypes/GENIA_event_20.dtd">
+<Annotation annotates="http://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;retmode=xml&amp;rettype=medline&amp;id=000000000" created="26/03/2010" creator="Tomoko Ohta"><PubmedArticleSet><PubmedArticle><MedlineCitation>
+<PMID>000000000</PMID>
+<Article>
+<ArticleTitle>
+<sentence id="S1">Interactions between <gene-or-gene-product id="G1">VirB9</gene-or-gene-product> and <gene-or-gene-product id="G2">VirB10</gene-or-gene-product> Membrane Proteins Involved in Movement of DNA from Agrobacterium tumefaciens into Plant Cells</sentence>
+</ArticleTitle>
+<Abstract>
+<AbstractText>
+<sentence id="S2">The 11 VirB proteins from Agrobacterium tumefaciens are predicted to form a membrane-bound complex that mediates the movement of DNA from the bacterium into plant cells .</sentence>
+<sentence id="S3">The studies reported here on the possible VirB protein interactions in such a complex demonstrate that <gene-or-gene-product id="G5">VirB9</gene-or-gene-product> and <gene-or-gene-product id="G6">VirB10</gene-or-gene-product> can each form high-molecularweight complexes after treatment with a chemical cross-linker .</sentence>
+<sentence id="S4">Analysis of nonpolar virB mutants showed that the formation of the <term id="T2" sem="Cell_component"><gene-or-gene-product id="G8">VirB10</gene-or-gene-product> complexes</term> does not occur in a <gene-or-gene-product id="G9">virB9</gene-or-gene-product> mutant and that <gene-or-gene-product id="G10">VirB9</gene-or-gene-product> and <gene-or-gene-product id="G11">VirB10</gene-or-gene-product> are not components of the same <term id="T3" sem="Cell_component">cross-linked complex</term> .</sentence>
+<sentence id="S5"><gene-or-gene-product id="G12">VirB9</gene-or-gene-product> , when stabilized by the concurrent expression of <gene-or-gene-product id="G13">VirB7</gene-or-gene-product> , was shown to be sufficient to permit <gene-or-gene-product id="G14">VirB10</gene-or-gene-product> to cross-link into its usual high-molecular-weight forms in the absence of other Vir proteins .</sentence>
+<sentence id="S6">Randomly introduced single point mutations in <gene-or-gene-product id="G16">virB9</gene-or-gene-product> resulted in Agrobacterium strains with severely attenuated <term id="T1" sem="Biological_process">virulence</term> .</sentence>
+<staticrel id="R1">
+<SRtype/>
+<GGP idref="G16"/>
+<BioTerm idref="T1"/></staticrel>
+<sentence id="S7">Although some of the mutants contained wild-type levels of <gene-or-gene-product id="G17">VirB9</gene-or-gene-product> and displayed an unaltered <gene-or-gene-product id="G18">VirB9</gene-or-gene-product> cross-linking pattern , <gene-or-gene-product id="G19">VirB10</gene-or-gene-product> cross-linking was drastically reduced .</sentence>
+<sentence id="S8">We conclude that specific amino acid residues in <gene-or-gene-product id="G20">VirB9</gene-or-gene-product> are necessary for interaction with <gene-or-gene-product id="G21">VirB10</gene-or-gene-product> resulting in the capacity of <gene-or-gene-product id="G22">VirB10</gene-or-gene-product> to participate in high-molecular-weight complexes that can be visualized by chemical cross-linking .</sentence>
+<sentence id="S9"/></AbstractText>
+</Abstract></Article></MedlineCitation></PubmedArticle></PubmedArticleSet></Annotation>

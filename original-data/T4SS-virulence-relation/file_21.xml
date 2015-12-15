@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<!DOCTYPE Annotation PUBLIC "-//GENIA//DTD GENIA ANNOTATION EVENT 2.0//EN" "../GENIAtypes/GENIA_event_20.dtd">
+<Annotation annotates="http://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;retmode=xml&amp;rettype=medline&amp;id=000000000" created="26/03/2010" creator="Tomoko Ohta"><PubmedArticleSet><PubmedArticle><MedlineCitation>
+<PMID>000000000</PMID>
+<Article>
+<ArticleTitle>
+<sentence id="S1">The Product of the <gene-or-gene-product id="G1">virB4</gene-or-gene-product> Gene of <term id="N4" sem="Bacterium">Agrobacterium tumefaciens</term> Promotes Accumulation of <gene-or-gene-product id="G2">VirB3</gene-or-gene-product> Protein</sentence>
+</ArticleTitle>
+<Abstract>
+<AbstractText>
+<sentence id="S2">The process of <term id="T1" sem="Biological_process"><term id="T7" sem="Cell_component">T-DNA</term> transfer</term> from <term id="N1" sem="Bacterium">Agrobacterium tumefaciens</term> to <term id="N2" sem="Cell_natural">plant cells</term> is thought to involve passage of a DNA-protein complex through a specialized structure in the <term id="T8" sem="Cell_component">bacterial membrane</term> .</sentence>
+<sentence id="S3">The virB operon of <term id="N5" sem="Bacterium">A. tumefaciens</term> encodes 11 proteins , of which 9 are known to be located in the <term id="T9" sem="Cell_component">membranes</term> and 10 have been shown to be essential for <term id="T2" sem="Biological_process">virulence</term> .</sentence>
+<sentence id="S4">Sequence comparisons between proteins encoded by the virB operon and those encoded by operons from <term id="T10" sem="Cell_component">conjugative plasmids</term> indicated that VirB proteins may form a structure similar to a <term id="T11" sem="Cell_component">conjugative pilus</term> .</sentence>
+<sentence id="S5">Here , we examine the effects of mutations in <gene-or-gene-product id="G7">virB4</gene-or-gene-product> on the accumulation and <term id="T3" sem="Biological_process">localization</term> of other <term id="N3" sem="Protein_family_or_group">VirB proteins</term> .</sentence>
+<sentence id="S6"><gene-or-gene-product id="G9">VirB4</gene-or-gene-product> shares amino acid sequence similarity with the <gene-or-gene-product id="G10">TraC</gene-or-gene-product> protein of plasmid F , which is essential for <term id="T4" sem="Biological_process"><term id="T12" sem="Cell_component">pilus</term> formation</term> in Escherichia coli , and with the <gene-or-gene-product id="G12">PtlC</gene-or-gene-product> protein of Bordetella pertussis , which is required for <term id="T5" sem="Biological_process">toxin secretion</term> .</sentence>
+<sentence id="S7">Polar and nonpolar <gene-or-gene-product id="G13">virB4</gene-or-gene-product> mutants were examined , and all were shown to be unable to accumulate <gene-or-gene-product id="G14">VirB3</gene-or-gene-product> protein to wild-type levels .</sentence>
+<sentence id="S8">A low level of <gene-or-gene-product id="G15">VirB3</gene-or-gene-product> protein which was present in induced NT1RE cells harboring <gene-or-gene-product id="G16">virB4</gene-or-gene-product> nonpolar mutant pBM1130 was found to associate with the <term id="T13" sem="Cell_component">inner membrane</term> fraction only , whereas in wild-type cells <gene-or-gene-product id="G17">VirB3</gene-or-gene-product> associated with both inner and <term id="T14" sem="Cell_component">outer membranes</term> .</sentence>
+<sentence id="S9">The results indicate that for <gene-or-gene-product id="G18">VirB3</gene-or-gene-product> to accumulate in the <term id="T15" sem="Cell_component">outer membrane</term> , <gene-or-gene-product id="G19">VirB4</gene-or-gene-product> must also be present , and it is possible that one role of <gene-or-gene-product id="G20">VirB4</gene-or-gene-product> is in the correct <term id="T6" sem="Biological_process">assembly</term> of a VirB protein membrane structure .</sentence>
+<sentence id="S10"/></AbstractText>
+</Abstract></Article></MedlineCitation></PubmedArticle></PubmedArticleSet></Annotation>

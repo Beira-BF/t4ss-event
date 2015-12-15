@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<!DOCTYPE Annotation PUBLIC "-//GENIA//DTD GENIA ANNOTATION EVENT 2.0//EN" "../GENIAtypes/GENIA_event_20.dtd">
+<Annotation annotates="http://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;retmode=xml&amp;rettype=medline&amp;id=000000000" created="26/03/2010" creator="Tomoko Ohta"><PubmedArticleSet><PubmedArticle><MedlineCitation>
+<PMID>000000000</PMID>
+<Article>
+<ArticleTitle>
+<sentence id="S1"><term id="T4" sem="Bacterium">Helicobacter pylori</term> <term id="T1" sem="Biological_process">Virulence</term> and Genetic Geography</sentence>
+</ArticleTitle>
+<Abstract>
+<AbstractText>
+<sentence id="S2">Isolated for the first time in 1982 from human gastric biopsy , Helicobacter pylori is responsible for gastritis , peptic ulcer , and gastric cancer .</sentence>
+<sentence id="S3">A pathogenicity island acquired by horizontal transfer , coding for a <term id="T3" sem="Cell_component">type IV secretion system</term> , is a major determinant of <term id="T2" sem="Biological_process">virulence</term> .</sentence>
+<sentence id="S4">The infection is now treated with antibiotics , and vaccines are in preparation .</sentence>
+<sentence id="S5">The geographic distribution suggests coevolution of man and Helicobacter pylori .</sentence>
+</AbstractText>
+</Abstract></Article></MedlineCitation></PubmedArticle></PubmedArticleSet></Annotation>

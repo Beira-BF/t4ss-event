@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<!DOCTYPE Annotation PUBLIC "-//GENIA//DTD GENIA ANNOTATION EVENT 2.0//EN" "../GENIAtypes/GENIA_event_20.dtd">
+<Annotation annotates="http://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;retmode=xml&amp;rettype=medline&amp;id=000000000" created="26/03/2010" creator="Tomoko Ohta"><PubmedArticleSet><PubmedArticle><MedlineCitation>
+<PMID>000000000</PMID>
+<Article>
+<ArticleTitle>
+<sentence id="S1">A Bacterial Guanine Nucleotide Exchange Factor Activates ARF on <term id="T1" sem="Bacterium">Legionella</term> Phagosomes</sentence>
+</ArticleTitle>
+<Abstract>
+<AbstractText>
+<sentence id="S2">The intracellular pathogen <term id="T2" sem="Bacterium">Legionella pneumophila</term> subverts vesicle traffic in eukaryotic host cells to create a vacuole that supports replication .</sentence>
+<sentence id="S3">The dot/icm genes encode a protein secretion apparatus that <term id="T3" sem="Bacterium">L. pneumophila</term> require for biogenesis of this vacuole .</sentence>
+<sentence id="S4">Here we show that <term id="T4" sem="Bacterium">L. pneumophila</term> produce a protein called <gene-or-gene-product id="G3">RalF</gene-or-gene-product> that functions as an exchange factor for the ADP ribosylation factor ( ARF ) family of guanosine triphosphatases ( GTPases ) .</sentence>
+<sentence id="S5">The <gene-or-gene-product id="G8">RalF</gene-or-gene-product> protein is required for the <term id="T6" sem="Biological_process">localization</term> of ARF on phagosomes containing <term id="T5" sem="Bacterium">L. pneumophila</term> .</sentence>
+<event id="E1"><type class="Localization" idref="T6"/><theme idref="G8"/></event>
+<sentence id="S6"><term id="T7" sem="Biological_process">Translocation</term> of <gene-or-gene-product id="G10">RalF</gene-or-gene-product> protein through the phagosomal membrane is a dot/ icm-dependent process .</sentence>
+<event id="E2"><type class="Localization" idref="T7"/><theme idref="G10"/></event>
+<sentence id="S7">Thus , <gene-or-gene-product id="G11">RalF</gene-or-gene-product> is a substrate of the Dot/Icm secretion apparatus .</sentence>
+</AbstractText>
+</Abstract></Article></MedlineCitation></PubmedArticle></PubmedArticleSet></Annotation>

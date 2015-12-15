@@ -1,0 +1,224 @@
+PMID, ArticleTitle, AbstractText {display: block}
+PMID:before, ArticleTitle:before, AbstractText:before {font-style:bold}
+PMID:before			{content: "##PMID"}
+ArticleTitle:before	{content: "##TITLE"}
+AbstractText:before	{content: "##ABSTRACT"}
+
+sentence {
+	display: block;
+	border: thin solid black;
+	margin-top: 0.5em; margin-bottom: 0.5em;
+	padding-top: 0.1em; padding-bottom: 0.1em; padding-left:0.1em; padding-right:0.1em;
+}
+
+sentence:before {content: attr(id); color: white; background-color: black}
+
+term:after	{content: attr(id); font-size: 8pt; color: white; background-color: black}
+cons:after	{content: attr(id); font-size: 8pt; color: white; background-color: black}
+frag:after	{content: attr(id); font-size: 8pt; color: white; background-color: black}
+
+/*
+event {
+	display: block;
+	border: thin solid blue;
+	margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 1em;
+	padding-top: 0.1em; padding-bottom: 0.1em; padding-left: 0.1em; padding-right:0.1em;
+}
+
+event:before {
+	content: "EVENT " attr(id) " (assertion: " attr(assertion) ", uncertainty: " attr(uncertainty) ")";
+	background-color: black;
+	color: white;
+}
+
+type, theme, site, locTo, locFrom, product, cause, csite, clue {display: block}
+type:before		{content: "TYPE         : " attr(class)}
+type:after		{content:  draw(arrowto(attr(idref), after, red))}
+theme:after		{content: "THEME        : " attr(idref) " " attr(idref1) " " attr(idref2) " " attr(idref3) draw(arrowto(attr(idref), after, blue))}
+site:after		{content: "SITE         : " attr(idref) " " attr(idref1) " " attr(idref2) " " attr(idref3) draw(arrowto(attr(idref), after, blue))}
+locTo:after		{content: "LOCALIZE TO  : " attr(idref) " " attr(idref1) " " attr(idref2) " " attr(idref3) draw(arrowto(attr(idref), after, blue))}
+locFrom:after	{content: "LOCALIZE FROM: " attr(idref) " " attr(idref1) " " attr(idref2) " " attr(idref3) draw(arrowto(attr(idref), after, blue))}
+product:after	{content: "PRODUCT      : " attr(idref) " " attr(idref1) " " attr(idref2) " " attr(idref3) draw(arrowto(attr(idref), after, blue))}
+cause:after		{content: "CAUSE        : " attr(idref) " " attr(idref1) " " attr(idref2) " " attr(idref3) draw(arrowto(attr(idref), after, red))}
+csite:after		{content: "CSITE        : " attr(idref) " " attr(idref1) " " attr(idref2) " " attr(idref3) draw(arrowto(attr(idref), after, red))}
+#clue:before		{content: "CLUE  : "}
+clue > clueType {background-color: #ffaaaa}
+clue > linkTheme {background-color: #ffffb3}
+clue > linkCause {background-color: #ffb3e6}
+clue > clueTime	{background-color: #b3b3ff}
+clue > clueLoc	{background-color: #3f8c8c}
+clue > atLoc	{background-color: #ccffcc}
+#clue > fromLoc	{background-color: #ffcccc}
+#clue > toLoc	{background-color: #ccccff}
+clue > envLoc	{background-color: #66ffff}
+clue > clueExperiment {background-color: #b3ffb3}
+
+toLoc {background-color: #ccff99}
+toLoc:after {content: draw(arrowto(attr(idref1), after, green)) draw(arrowto(attr(idref2), green)) draw(arrowto(attr(idref3), green))}
+
+fromLoc {background-color: #ccff99}
+fromLoc:after {content: draw(arrowto(attr(idref1), after, green)) draw(arrowto(attr(idref2), green)) draw(arrowto(attr(idref3), green))}
+
+corefTheme {background-color: #ffff00}
+corefTheme:after {content: draw(arrowto(attr(idref1), after, green)) draw(arrowto(attr(idref2), green)) draw(arrowto(attr(idref3), green))}
+
+corefSite {background-color: #ffffaa}
+corefSite:after {content: draw(arrowto(attr(idref1), after, green)) draw(arrowto(attr(idref2), green)) draw(arrowto(attr(idref3), green))}
+
+corefProduct {background-color: #eeee00}
+corefProduct:after {content: draw(arrowto(attr(idref1), after, green)) draw(arrowto(attr(idref2), green)) draw(arrowto(attr(idref3), green))}
+
+corefCause {background-color: #e6b3ff}
+corefCause:after {content: draw(arrowto(attr(idref1), after, green)) draw(arrowto(attr(idref2), green)) draw(arrowto(attr(idref3), green))}
+
+comment:before	{content: "COMMENT  : "}
+comment			{font-style: italic}
+*/
+
+cons								{ font-style:italic; text-decoration: underline}
+
+#gene-or-gene-product				{ background-color: #ff9999; font-weight: bold}
+gene-or-gene-product				{ background-color: #7070FF; font-weight: bold}
+
+term								{ background-color: #F5DEB3 }
+
+term:after	{content: attr(id); font-size: 8pt; color: white; background-color: black}
+cons:after	{content: attr(id); font-size: 8pt; color: white; background-color: black}
+frag:after	{content: attr(id); font-size: 8pt; color: white; background-color: black}
+gene-or-gene-product:after	{content: attr(id) draw(arrowto(attr(equiv), after, #aaaaaa)); font-size: 8pt; color: white; background-color: black}
+
+term[sem="Amino_acid_monomer"]		{ background-color: #ccffff; }
+term[sem="Peptide"]					{ background-color: #ccffff; }
+term[sem="Protein_complex"]			{ background-color: #7FDAFF; }
+term[sem="Protein_domain_or_region"]{ background-color: #3FC8FF; }
+term[sem="Protein_family_or_group"]	{ background-color: #19BDFF; }
+term[sem="Protein_molecule"]		{ background-color: #00B6FF; }
+term[sem="Protein_substructure"]	{ background-color: #00AAEE; }
+
+term[sem="Nucleotide"]				{ background-color: #99ffff; }
+term[sem="Polynucleotide"]			{ background-color: #99ffff; }
+term[sem="DNA_domain_or_region"]	{ background-color: #3FFF3F; }
+term[sem="DNA_family_or_group"]		{ background-color: #19FF19; }
+term[sem="DNA_molecule"]			{ background-color: #00FF00; }
+term[sem="DNA_substructure"]		{ background-color: #00CD00; }
+term[sem="RNA_domain_or_region"]	{ background-color: #FFFF3F; }
+term[sem="RNA_family_or_group"]		{ background-color: #FFFF00; }
+term[sem="RNA_molecule"]			{ background-color: #EEEE00; }
+term[sem="RNA_substructure"]		{ background-color: #CDCD00; }
+
+term[sem="Organic_compound"]		{ background-color: #ccffff; }
+term[sem="Organic_compound_other"]	{ background-color: #ccffff; }
+term[sem="Inorganic_compound"]		{ background-color: #ccffff; }
+term[sem="Element"]					{ background-color: #ccffff; }
+term[sem="Carbohydrate"]			{ background-color: #ccffff; }
+term[sem="Lipid"]					{ background-color: #ccffff; }
+
+term[sem="Virus"]					{ background-color: #ffff99; }
+term[sem="Unicellular_organism"]	{ background-color: #ffff99; }
+term[sem="Bacterium"]	{ background-color: #70FF70; }
+term[sem="Multicellular_organism_natural"]				{ background-color: #ffff99; }
+term[sem="Multicellular_organism_genetically_modified"]	{ background-color: #ccff99; }
+term[sem="Body_region"]				{ background-color: #ffff99; }
+term[sem="Tissue_natural"]			{ background-color: #ffff99; }
+term[sem="Tissue_cultured"]			{ background-color: #ffff99; }
+
+term[sem="Cell_natural"]				{ background-color: #99ff99; }
+term[sem="Cell_component"]			{ background-color: #ccccFF; }
+term[sem="Cell_cultured"]				{ background-color: #99ff99; }
+
+term[sem="Disease"]					{ background-color: #ababab; }
+term[sem="Molecular_function"]		{ background-color: #FFFFbb; }
+term[sem="Biological_process"]		{ background-color: #FFFF00; }
+term[sem="Experimental_method"]		{ background-color: #cc9966; }
+term[sem="Diagnosis"]				{ background-color: #ababab; }
+term[sem="Therapeutics"]			{ background-color: #ababab; }
+
+cons[sem="Amino_acid_monomer"]		{ background-color: #ccffff; }
+cons[sem="Peptide"]					{ background-color: #ccffff; }
+cons[sem="Protein_complex"]			{ background-color: #7FDAFF; }
+cons[sem="Protein_domain_or_region"]{ background-color: #3FC8FF; }
+cons[sem="Protein_family_or_group"]	{ background-color: #19BDFF; }
+cons[sem="Protein_molecule"]		{ background-color: #00B6FF; }
+cons[sem="Protein_substructure"]	{ background-color: #00AAEE; }
+
+cons[sem="Nucleotide"]				{ background-color: #99ffff; }
+cons[sem="Polynucleotide"]			{ background-color: #99ffff; }
+cons[sem="DNA_domain_or_region"]	{ background-color: #3FFF3F; }
+cons[sem="DNA_family_or_group"]		{ background-color: #19FF19; }
+cons[sem="DNA_molecule"]			{ background-color: #00FF00; }
+cons[sem="DNA_substructure"]		{ background-color: #00CD00; }
+cons[sem="RNA_domain_or_region"]	{ background-color: #FFFF3F; }
+cons[sem="RNA_family_or_group"]		{ background-color: #FFFF00; }
+cons[sem="RNA_molecule"]			{ background-color: #EEEE00; }
+cons[sem="RNA_substructure"]		{ background-color: #CDCD00; }
+
+cons[sem="Organic_compound"]		{ background-color: #ccffff; }
+cons[sem="Organic_compound_other"]	{ background-color: #ccffff; }
+cons[sem="Inorganic_compound"]		{ background-color: #ccffff; }
+cons[sem="Element"]					{ background-color: #ccffff; }
+cons[sem="Carbohydrate"]			{ background-color: #ccffff; }
+cons[sem="Lipid"]					{ background-color: #ccffff; }
+
+cons[sem="Virus"]					{ background-color: #ffff99; }
+cons[sem="Unicellular_organism"]	{ background-color: #ffff99; }
+cons[sem="Bacterium"]	{ background-color: #ffff99; }
+cons[sem="Multicellular_organism_natural"]				{ background-color: #ffff99; }
+cons[sem="Multicellular_organism_genetically_modified"]	{ background-color: #ccff99; }
+cons[sem="Body_region"]				{ background-color: #ffff99; }
+cons[sem="Tissue_natural"]			{ background-color: #ffff99; }
+cons[sem="Tissue_cultured"]			{ background-color: #ffff99; }
+cons[sem="Cell_natural"]				{ background-color: #ccff99; }
+cons[sem="Cell_component"]			{ background-color: #ccff99; }
+cons[sem="Cell_cultured"]				{ background-color: #ccff99; }
+cons[sem="Disease"]					{ background-color: #ababab; }
+cons[sem="Molecular_function"]		{ background-color: #cc99ff; }
+cons[sem="Biological_process"]		{ background-color: #cc99ff; }
+cons[sem="Experimental_method"]		{ background-color: #cc9966; }
+cons[sem="Diagnosis"]				{ background-color: #ababab; }
+cons[sem="Therapeutics"]			{ background-color: #ababab; }
+
+
+relation {
+	display: block;
+	border: thin solid green;
+	margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 1em;
+	padding-top: 0.1em; padding-bottom: 0.1em; padding-left: 0.1em; padding-right:0.1em;
+}
+
+relation:before {
+	content: "Relation " attr(id) " (judgment: " attr(relation) ")"; 
+	background-color: black;
+	color: white;
+}
+
+SRtype, GGP, BioTerm, tags, note {display: block}
+SRtype:before	{content: "TYPE    : " attr(class)}
+GGP:after		{content: "NE     : " attr(idref)  draw(arrowto(attr(idref), after, red))}
+BioTerm:after	{content: "term    : " attr(idref)  draw(arrowto(attr(idref), after, green))}
+tags:before	{content: "tags    : "}
+/*tags		{font-style: bold}*/
+note:before	{content: "note    : "}
+/*note		{font-style: italic}*/
+
+staticrel {
+	display: block;
+	border: thin solid red;
+	margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 1em;
+	padding-top: 0.1em; padding-bottom: 0.1em; padding-left: 0.1em; padding-right:0.1em;
+}
+
+staticrel:before {
+/*	content: "STATIC RELATION " attr(id) " (relation: " attr(relation) ")"; */
+	content: "RELATION " attr(id) " (judgment: " attr(relation) ")"; 
+	background-color: black;
+	color: white;
+}
+
+SRtype, GGP, BioTerm, tags, note {display: block}
+SRtype:before	{content: "TYPE    : " attr(class)}
+GGP:after		{content: "GGP     : " attr(idref)  draw(arrowto(attr(idref), after, red))}
+BioTerm:after	{content: "Process    : " attr(idref)  draw(arrowto(attr(idref), after, green))}
+tags:before	{content: "tags    : "}
+/*tags		{font-style: bold}*/
+note:before	{content: "note    : "}
+/*note		{font-style: italic}*/

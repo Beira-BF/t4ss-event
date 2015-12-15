@@ -1,0 +1,284 @@
+<!-- ============================================================ -->
+<!-- DTD for Genia corpus with term&event annotation              -->
+<!-- written by Jin-Dong KIM <jdkim@tsujii.is.s.u-tokyo.ac.jp>    -->
+<!-- Date of last modification: November 11 2005                  -->
+<!-- ============================================================ -->
+
+<!-- ============================================================ -->
+<!-- Labels for term&event annotation                             -->
+<!-- ============================================================ -->
+<!ENTITY % term.class "(
+Element | Inorganic_compound | Organic_compound_other |
+Amino_acid_monomer | Peptide | Carbohydrate | Lipid | protein |
+Protein_complex | Protein_domain_or_region | Protein_family_or_group |
+Protein_molecule | Protein_substructure | DNA |
+DNA_domain_or_region | DNA_family_or_group | DNA_molecule | DNA_substructure | RNA |
+RNA_domain_or_region | RNA_family_or_group | RNA_molecule | RNA_substructure |
+Nucleotide | Polynucleotide |
+Cell_component | Cell_cultured | Cell_natural |
+Body_region | Tissue_cultured | Tissue_natural |
+Multicellular_organism_natural | Multicellular_organism_genetically_modified |
+Unicellular_organism | Virus | Bacterium |
+Other | Biological_process | Diagnosis | Disease |
+Experimental_method | Molecular_function | Therapeutics
+)">
+
+<!ENTITY % word.class "(
+C | CC | CD | COLON | COMMA | DT | EX | FJJ | FW | IN | JJ | JJR | JJS |
+LQT | LRB | LS | MD | NN | NNP | NNPS | NNS | PDT | PERIOD | POS |
+PRP | PRPP | RB | RBR | RBS | RP | RQT | RRB | SYM | TO |
+VB | VBD | VBG | VBN | VBP | VBZ | WDT | WP | WPP | WRB | FRAG
+)">
+
+<!-- ============================================================ -->
+<!-- HIERARCHICAL ELEMENTS                                        -->
+<!-- ============================================================ -->
+<!ELEMENT Annotation (PubmedArticleSet)>
+<!ATTLIST Annotation
+		annotates CDATA #REQUIRED
+		creator   CDATA #IMPLIED
+		created   CDATA #IMPLIED
+>
+
+<!ELEMENT PubmedArticleSet (PubmedArticle)>
+<!ELEMENT PubmedArticle (MedlineCitation)>
+<!ELEMENT MedlineCitation (PMID, Article)>
+<!ELEMENT Article (ArticleTitle, Abstract)>
+<!ELEMENT Abstract (AbstractText)>
+
+<!-- ============================================================ -->
+<!-- BLOCK ELEMENTS                                               -->
+<!-- ============================================================ -->
+<!ELEMENT ArticleTitle (sentence | event | staticrel | relation)+>
+<!ELEMENT AbstractText (sentence | event | staticrel | relation)+>
+<!ELEMENT PMID (#PCDATA)>
+
+<!-- ============================================================ -->
+<!-- LINGUISTIC ELEMENTS                                          -->
+<!-- ============================================================ -->
+<!ELEMENT sentence	(#PCDATA | cons | term | frag | gene-or-gene-product)*>
+<!ATTLIST sentence	id ID	#REQUIRED>
+
+<!ELEMENT cons		(#PCDATA | cons | term | frag | gene-or-gene-product)*>
+<!ATTLIST cons 
+		sem CDATA #REQUIRED
+		lex CDATA #REQUIRED
+		id  ID    #REQUIRED
+>
+
+<!ELEMENT term		(#PCDATA | term | frag | gene-or-gene-product)*>
+<!ATTLIST term
+		sem %term.class;	#IMPLIED
+		lex CDATA	#IMPLIED
+		id  ID		#REQUIRED
+		manual-T2G-term-processing (True | False) #IMPLIED
+		manual-A-term-processing (True | False) #IMPLIED
+		T2G-Is-restructure (True | manual | done) #IMPLIED
+		frags CDATA #IMPLIED
+		full-lex CDATA #IMPLIED
+		old-frag-id CDATA #IMPLIED
+		orig-frag-lex CDATA #IMPLIED
+		remap-to	CDATA #IMPLIED
+		site	CDATA #IMPLIED
+		appos		(YES|NO)	"NO"
+		idref	CDATA	#IMPLIED
+>
+
+<!ELEMENT frag		(#PCDATA | term | gene-or-gene-product)*>
+<!ATTLIST frag
+		id  ID		#REQUIRED
+		idref IDREF	#IMPLIED
+		remap-to CDATA	#IMPLIED
+		site	CDATA #IMPLIED
+>
+
+<!ELEMENT gene-or-gene-product	(#PCDATA | frag)*>
+<!ATTLIST gene-or-gene-product
+		id  ID		#REQUIRED
+		equiv		IDREF	#IMPLIED
+		appos		(YES|NO)	"NO"
+		orig-frag-lex CDATA #IMPLIED
+		remapped-to-from	CDATA	#IMPLIED
+>
+
+<!-- ============================================================ -->
+<!-- ELEMENTS FOR EVENT ANNOTATION                                -->
+<!-- ============================================================ -->
+<!ELEMENT event (type, (theme | site | locTo | locFrom | product | cause | csite)*, clue?, comment?)>
+<!-- ELEMENT event (type, theme*, site*, product*, cause*, csite*, clue, comment?) -->
+
+<!ATTLIST event
+		id		ID							#REQUIRED
+		assertion		(exist|non-exist)			"exist"
+		uncertainty 	(certain|probable|doubtful) "certain"
+		copy-of CDATA #IMPLIED
+>
+
+<!ELEMENT type EMPTY>
+<!ATTLIST type class		CDATA	"UNCLASSIFIED">
+<!ATTLIST type subclass		(migration|presence|ToLook)	"migration">
+<!ATTLIST type
+		idref		IDREF	#IMPLIED
+>
+
+<!ELEMENT theme EMPTY>
+<!ATTLIST theme
+		idref		IDREF	#REQUIRED
+		idref1		IDREF	#IMPLIED
+		idref2		IDREF	#IMPLIED
+		idref3		IDREF	#IMPLIED
+		manual-multi-idref-processing (True | Done) #IMPLIED
+		judged-out	CDATA	#IMPLIED
+>
+
+<!ELEMENT site EMPTY>
+<!ATTLIST site
+		idref		IDREF	#REQUIRED
+		idref1		IDREF	#IMPLIED
+		idref2		IDREF	#IMPLIED
+		idref3		IDREF	#IMPLIED
+		site_of		CDATA	#IMPLIED
+>
+
+<!ELEMENT locTo EMPTY>
+<!ATTLIST locTo
+		idref		IDREF	#REQUIRED
+		idref1		IDREF	#IMPLIED
+		idref2		IDREF	#IMPLIED
+		idref3		IDREF	#IMPLIED
+>
+<!ELEMENT locFrom EMPTY>
+<!ATTLIST locFrom
+		idref		IDREF	#REQUIRED
+		idref1		IDREF	#IMPLIED
+		idref2		IDREF	#IMPLIED
+		idref3		IDREF	#IMPLIED
+>
+<!ELEMENT csite EMPTY>
+<!ATTLIST csite
+		idref		IDREF	#REQUIRED
+		idref1		IDREF	#IMPLIED
+		idref2		IDREF	#IMPLIED
+		idref3		IDREF	#IMPLIED
+>
+
+<!ELEMENT product EMPTY>
+<!ATTLIST product
+		idref		IDREF	#REQUIRED
+		idref1		IDREF	#IMPLIED
+		idref2		IDREF	#IMPLIED
+		idref3		IDREF	#IMPLIED
+>
+
+<!ELEMENT cause EMPTY>
+<!ATTLIST cause
+		idref		IDREF	#REQUIRED
+		idref1		IDREF	#IMPLIED
+		idref2		IDREF	#IMPLIED
+		idref3		IDREF	#IMPLIED
+		manual-multi-idref-processing (True | Done) #IMPLIED
+		judged-out	CDATA	#IMPLIED
+>
+
+<!ELEMENT clue  (#PCDATA | clueType | linkTheme | linkCause | clueTime | clueLoc | atLoc | fromLoc | toLoc | envLoc | corefTheme | corefSite | corefProduct | corefCause | corefLoc | clueExperiment | clueSpec)*>
+
+<!ELEMENT clueType		(#PCDATA | atLoc)*>
+<!ELEMENT linkTheme		(#PCDATA)>
+<!ELEMENT linkCause		(#PCDATA)>
+<!ELEMENT clueTime		(#PCDATA)>
+<!ELEMENT clueLoc		(#PCDATA)>
+<!ELEMENT atLoc			(#PCDATA)>
+<!ELEMENT fromLoc		(#PCDATA)>
+<!ELEMENT toLoc			(#PCDATA)>
+<!ATTLIST toLoc
+		idref1		IDREF	#IMPLIED
+		idref2		IDREF	#IMPLIED
+		idref3		IDREF	#IMPLIED
+		idref4		IDREF	#IMPLIED
+		idref5		IDREF	#IMPLIED
+>
+<!ELEMENT envLoc		(#PCDATA)>
+<!ELEMENT clueExperiment	(#PCDATA)>
+<!ELEMENT clueSpec		(#PCDATA)>
+
+<!ELEMENT corefTheme		(#PCDATA)>
+<!ATTLIST corefTheme
+		idref1		IDREF	#IMPLIED
+		idref2		IDREF	#IMPLIED
+		idref3		IDREF	#IMPLIED
+		idref4		IDREF	#IMPLIED
+		idref5		IDREF	#IMPLIED
+>
+
+<!ELEMENT corefCause		(#PCDATA)>
+<!ATTLIST corefCause
+		idref1		IDREF	#IMPLIED
+		idref2		IDREF	#IMPLIED
+		idref3		IDREF	#IMPLIED
+		idref4		IDREF	#IMPLIED
+		idref5		IDREF	#IMPLIED
+>
+
+<!ELEMENT corefSite		(#PCDATA)>
+<!ATTLIST corefSite
+		idref1		IDREF	#IMPLIED
+		idref2		IDREF	#IMPLIED
+		idref3		IDREF	#IMPLIED
+		idref4		IDREF	#IMPLIED
+		idref5		IDREF	#IMPLIED
+>
+
+<!ELEMENT corefProduct		(#PCDATA)>
+<!ATTLIST corefProduct
+		idref1		IDREF	#IMPLIED
+		idref2		IDREF	#IMPLIED
+		idref3		IDREF	#IMPLIED
+		idref4		IDREF	#IMPLIED
+		idref5		IDREF	#IMPLIED
+>
+
+<!ELEMENT corefLoc		(#PCDATA)>
+<!ATTLIST corefLoc
+		idref1		IDREF	#IMPLIED
+		idref2		IDREF	#IMPLIED
+		idref3		IDREF	#IMPLIED
+		idref4		IDREF	#IMPLIED
+		idref5		IDREF	#IMPLIED
+>
+
+<!ELEMENT comment		(#PCDATA)>
+
+<!-- ============================================================ -->
+<!-- ELEMENTS FOR STATIC RELATION ANNOTATION                                -->
+<!-- ============================================================ -->
+<!ELEMENT staticrel (SRtype?, GGP, BioTerm, tags?, note?)>
+<!--ELEMENT staticrel (SRtype, GGP, BioTerm, SRcomment?)-->
+<!ATTLIST staticrel
+		id		ID	#REQUIRED
+		relation	(Yes | No | Unsure) "Yes"
+>
+
+<!ELEMENT relation (SRtype, GGP, BioTerm, tags?, note?)>
+<!ATTLIST relation
+		id		ID	#REQUIRED
+		relation	(Yes | No | Unsure) "Yes"
+>
+
+<!-- -->
+<!ELEMENT SRtype EMPTY>
+<!--<!ATTLIST SRtype class		(Equivalent | Specification | Modified_Protein | Isoform | Mutant | Recombinant | Precursor | Experimental_material | Amino_Acid_Motif | Amino_Acid | Peptide| Gene_Component | Protein_Complex | GGP_Group | Chromosomal_Locus | Other)	"Protein_Complex">-->
+<!ATTLIST SRtype class		(Equivalent | Specification | Modified_Protein | Isoform | Mutant | Recombinant | Precursor | Experimental_material | Amino_Acid_Motif | Amino_Acid | Peptide| Gene_Component | Protein_Complex | GGP_Group | Chromosomal_Locus | Participate | Other)	"Participate">
+
+<!ELEMENT GGP EMPTY>
+<!ATTLIST GGP
+		idref		IDREF	#REQUIRED
+>
+
+<!ELEMENT BioTerm EMPTY>
+<!ATTLIST BioTerm
+		idref		IDREF	#REQUIRED
+>
+
+<!ELEMENT tags		(#PCDATA)>
+
+<!ELEMENT note		(#PCDATA)>

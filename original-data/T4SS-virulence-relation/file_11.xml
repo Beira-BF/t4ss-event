@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<!DOCTYPE Annotation PUBLIC "-//GENIA//DTD GENIA ANNOTATION EVENT 2.0//EN" "../GENIAtypes/GENIA_event_20.dtd">
+<Annotation annotates="http://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;retmode=xml&amp;rettype=medline&amp;id=000000000" created="26/03/2010" creator="Tomoko Ohta"><PubmedArticleSet><PubmedArticle><MedlineCitation>
+<PMID>000000000</PMID>
+<Article>
+<ArticleTitle>
+<sentence id="S1">Characterization of the virB Operon from an Agrobucterium tumefaciens <term id="T4" sem="Cell_component">Ti Plasmid</term></sentence>
+</ArticleTitle>
+<Abstract>
+<AbstractText>
+<sentence id="S2">The <term id="T8" sem="Biological_process">virulence</term> genes of the <term id="T9" sem="Bacterium">Agrobacterium tumefaciens</term> <term id="T5" sem="Cell_component">Ti plasmid</term> are grouped into six transcription units and direct the <term id="T1" sem="Biological_process">transfer of T-DNA</term> into plant cells .</sentence>
+<sentence id="S3">We report here the nucleotide sequence of the largest vir operon , virB , from the <term id="T6" sem="Cell_component">Ti plasmid pTiA6NC</term> .</sentence>
+<sentence id="S4">This operon contains 11 open reading frames , 7 of which show evidence of translational coupling. <gene-or-gene-product id="G1">trpE</gene-or-gene-product> :: virB gene fusions were used to confirm the reading frames of genes <gene-or-gene-product id="G2">virB2</gene-or-gene-product> , <gene-or-gene-product id="G3">4</gene-or-gene-product> , <gene-or-gene-product id="G4">5</gene-or-gene-product> , <gene-or-gene-product id="G5">6</gene-or-gene-product> , <gene-or-gene-product id="G6">7</gene-or-gene-product> , <gene-or-gene-product id="G7">8</gene-or-gene-product> , <gene-or-gene-product id="G8">10</gene-or-gene-product> , and <gene-or-gene-product id="G9">11</gene-or-gene-product> .</sentence>
+<sentence id="S5">In addition , the native gene products of <gene-or-gene-product id="G10">virB6</gene-or-gene-product> and <gene-or-gene-product id="G11">virB9</gene-or-gene-product> were identified using maxicell and in vitro transcription-translation techniques , and the <gene-or-gene-product id="G12">VirB9</gene-or-gene-product> protein was found to be proteolytically processed .</sentence>
+<sentence id="S6">The codon usage of the predicted virB genes is very similar to the other pTiA6 vir genes and is much less biased than Escherichia coli .</sentence>
+<sentence id="S7">Since many of the virB gene products have <term id="T2" sem="Biological_process">secretion</term> signals common to <term id="T3" sem="Biological_process">exported</term> bacterial proteins , it is likely that they will be membrane-associated .</sentence>
+<sentence id="S8">We propose that the VirB proteins are involved in the formation of a transmembrane structure which mediates the passage of the transferred T-DNA molecule through the bacterial and plant <term id="T7" sem="Cell_component">cell membranes</term> .</sentence>
+</AbstractText>
+</Abstract></Article></MedlineCitation></PubmedArticle></PubmedArticleSet></Annotation>

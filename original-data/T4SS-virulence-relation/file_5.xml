@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Annotation PUBLIC "-//GENIA//DTD GENIA ANNOTATION EVENT 2.0//EN" "../GENIAtypes/GENIA_event_20.dtd">
+<Annotation created="26/03/2010" creator="Tomoko Ohta" annotates="http://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;retmode=xml&amp;rettype=medline&amp;id=000000000">
+<PubmedArticleSet>
+<PubmedArticle>
+<MedlineCitation>
+<PMID>000000000</PMID>
+<Article>
+<ArticleTitle>
+<sentence id="S1">Agrobacterium <gene-or-gene-product id="G1">VirE2</gene-or-gene-product> gets the <gene-or-gene-product id="G2">VIP1</gene-or-gene-product> treatment in plant nuclear import</sentence>
+</ArticleTitle>
+<Abstract>
+<AbstractText>
+<sentence id="S2"><term id="T1" sem="Bacterium">Agrobacterium tumefaciens</term> transforms plant cells by targeting a large single-stranded DNA molecule ( T-strand ) to the plant nucleus .</sentence>
+<sentence id="S3">The host cell contribution to <term id="T2" sem="Biological_process">nuclear import</term> and transformation is the focus of several current articles .</sentence>
+<sentence id="S4">Recently , plant proteins have been identified that promote <term id="T3" sem="Biological_process">nuclear import</term> of the T-strand .</sentence>
+<sentence id="S5">In particular , <gene-or-gene-product id="G3">VIP1</gene-or-gene-product> might couple transformation to the importin-dependent nuclear import pathway and deliver the T-strand to chromatin , thereby promoting integration into the <term id="T4" sem="Cell_component">host genome</term> .</sentence>
+<sentence id="S6"></sentence>
+</AbstractText>
+</Abstract>
+</Article>
+</MedlineCitation>
+</PubmedArticle>
+</PubmedArticleSet>
+</Annotation>

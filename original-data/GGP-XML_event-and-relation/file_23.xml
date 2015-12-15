@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<!DOCTYPE Annotation PUBLIC "-//GENIA//DTD GENIA ANNOTATION EVENT 2.0//EN" "../GENIAtypes/GENIA_event_20.dtd">
+<Annotation annotates="http://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;retmode=xml&amp;rettype=medline&amp;id=000000000" created="26/03/2010" creator="Tomoko Ohta"><PubmedArticleSet><PubmedArticle><MedlineCitation>
+<PMID>000000000</PMID>
+<Article>
+<ArticleTitle>
+<sentence id="S1">Protein Interactions Involved in <term id="T1" sem="Biological_process"><term id="N3" sem="Cell_component">Nuclear</term> Import</term> of the Agrobacterium <gene-or-gene-product id="G1">VirE2</gene-or-gene-product> Protein in Vivo and in Vitro</sentence>
+<event id="E2"><type class="Localization" idref="T1"/><theme idref="G1"/></event></ArticleTitle>
+<Abstract>
+<AbstractText>
+<sentence id="S2">Agrobacterium , the only known organism capable of trans-kingdom <term id="T2" sem="Biological_process">DNA transfer</term> , genetically transforms plants by transferring a segment of its DNA , T-DNA , into the <term id="T6" sem="Cell_component">nucleus</term> of the host cell where it integrates into the plant genome .</sentence>
+<sentence id="S3">One of the central events in this genetic transformation process is <term id="T3" sem="Biological_process"><term id="N2" sem="Cell_component">nuclear</term> import</term> of the <term id="N1" sem="DNA_molecule">T-DNA molecule</term> , which to a large degree is mediated by the bacterial <term id="T4" sem="Biological_process">virulence</term> protein <gene-or-gene-product id="G3">VirE2</gene-or-gene-product> .</sentence>
+<relation id="R1">
+<SRtype/>
+<GGP idref="G3"/>
+<BioTerm idref="T4"/></relation>
+<event id="E1"><type class="Localization" idref="T3"/><theme idref="N1"/><locTo idref="N2"/></event>
+<sentence id="S4"><gene-or-gene-product id="G4">VirE2</gene-or-gene-product> is distinguished by its nuclear targeting , which occurs only in plant but not in animal cells and is facilitated by the cellular <gene-or-gene-product id="G5">VIP1</gene-or-gene-product> protein .</sentence>
+<sentence id="S5">The molecular mechanism of the <gene-or-gene-product id="G6">VIP1</gene-or-gene-product> function is still unclear .</sentence>
+<sentence id="S6">Here , we used in vitro assays for <term id="T5" sem="Biological_process">nuclear import</term> and quantification of proteinprotein interactions to directly demonstrate formation of ternary complexes between <gene-or-gene-product id="G7">VirE2</gene-or-gene-product> , <gene-or-gene-product id="G8">VIP1</gene-or-gene-product> , and a component of the cellular <term id="T7" sem="Cell_component">nuclear import machinery</term> , <gene-or-gene-product id="G9">karyopherin</gene-or-gene-product> .</sentence>
+<event id="E3"><type class="Binding"/><theme idref="G7"/><theme idref="G8"/><theme idref="G9"/><clue>Here , we used in vitro assays for nuclear import and quantification of proteinprotein interactions to directly demonstrate formation of <clueType>ternary complexes</clueType> <linkTheme>between</linkTheme> VirE2 , VIP1 , and a component of the cellular nuclear import machinery , karyopherin .</clue></event>
+<sentence id="S7">Our results indicate that <gene-or-gene-product id="G10">VIP1</gene-or-gene-product> functions as a molecular bridge between <gene-or-gene-product id="G11">VirE2</gene-or-gene-product> and <gene-or-gene-product id="G12">karyopherin</gene-or-gene-product> , allowing <gene-or-gene-product id="G13">VirE2</gene-or-gene-product> to utilize the host cell <term id="T8" sem="Cell_component">nuclear import machinery</term> even without being directly recognized by its components .</sentence>
+<sentence id="S8"/></AbstractText>
+</Abstract></Article></MedlineCitation></PubmedArticle></PubmedArticleSet></Annotation>

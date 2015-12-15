@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Annotation PUBLIC "-//GENIA//DTD GENIA ANNOTATION EVENT 2.0//EN" "../GENIAtypes/GENIA_event_20.dtd">
+<Annotation created="26/03/2010" creator="Tomoko Ohta" annotates="http://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;retmode=xml&amp;rettype=medline&amp;id=000000000">
+<PubmedArticleSet>
+<PubmedArticle>
+<MedlineCitation>
+<PMID>000000000</PMID>
+<Article>
+<ArticleTitle>
+<sentence id="S1">A Robust Species Tree for the Alphaproteobacteria</sentence>
+</ArticleTitle>
+<Abstract>
+<AbstractText>
+<sentence id="S2">The branching order and coherence of the alphaproteobacterial orders have not been well established , and not all studies have agreed that <term id="T2" sem="Cell_component">mitochondria</term> arose from within the Rickettsiales .</sentence>
+<sentence id="S3">A species tree for 72 alphaproteobacteria was produced from a concatenation of alignments for 104 well-behaved protein families .</sentence>
+<sentence id="S4">Coherence was upheld for four of the five orders with current standing that were represented here by more than one species .</sentence>
+<sentence id="S5">However , the family Hyphomonadaceae was split from the other Rhodobacterales , forming an expanded group with Caulobacterales that also included Parvularcula .</sentence>
+<sentence id="S6">The three earliest-branching alphaproteobacterial orders were the Rickettsiales , followed by the Rhodospirillales and then the Sphingomonadales .</sentence>
+<sentence id="S7">The principal uncertainty is whether the expanded Caulobacterales group is more closely associated with the Rhodobacterales or the Rhizobiales .</sentence>
+<sentence id="S8">The mitochondrial branch was placed within the Rickettsiales as a sister to the combined Anaplasmataceae and Rickettsiaceae , all subtended by the Pelagibacter branch .</sentence>
+<sentence id="S9">Pelagibacter genes will serve as useful additions to the bacterial outgroup in future evolutionary studies of mitochondrial genes , including those that have <term id="T1" sem="Biological_process">transferred</term> to the <term id="T3" sem="Cell_component">eukaryotic nucleus</term> .</sentence>
+</AbstractText>
+</Abstract>
+</Article>
+</MedlineCitation>
+</PubmedArticle>
+</PubmedArticleSet>
+</Annotation>

@@ -1,0 +1,894 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY GENIAevent "http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#"
+     xml:base="http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:GENIAevent="http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Artificial_process -->
+
+    <owl:Class rdf:about="#Artificial_process"/>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Binding -->
+
+    <owl:Class rdf:about="#Binding">
+        <rdfs:subClassOf rdf:resource="#Physiological_process"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >binding
+Accession: GO:0005488 
+Ontology: molecular_function 
+Synonyms: narrow: ligand 
+Definition: 
+The selective, often stoichiometric interaction of a molecule with one or more specific sites on another molecule.
+Comment: 
+Note that ligand is being used in its broadest biological sense. For ligands that bind to signal transducing receptors, consider the molecular function term &#39;receptor binding ; GO\:0005102&#39; and its children.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Biological_process -->
+
+    <owl:Class rdf:about="#Biological_process">
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >biological_process
+Accession: GO:0008150
+Ontology: biological_process
+Synonyms: None
+Definition: A phenomenon marked by changes that lead to a particular result, 
+    mediated by one or more gene products.
+Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Cell_activation -->
+
+    <owl:Class rdf:about="#Cell_activation">
+        <rdfs:subClassOf rdf:resource="#Cellular_process"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Accession GO:0001775 
+Ontology biological process 
+Synonyms None 
+Definition A change in the morphology or behavior of a cell resulting from exposure to an activating factor such as a cellular or soluble ligand. [source: GOC:mgi_curators] 
+Comment None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Cell_adhesion -->
+
+    <owl:Class rdf:about="#Cell_adhesion">
+        <rdfs:subClassOf rdf:resource="#Cellular_process"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >cell adhesion
+
+    * Accession: GO:0007155
+    * Ontology: biological_process
+    * Synonyms:
+          o related: cell adhesion molecule activity
+          o related: membrane-associated guanylate kinase
+          o related: selectin
+    * Definition:
+          o The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Cell_communication -->
+
+    <owl:Class rdf:about="#Cell_communication">
+        <rdfs:subClassOf rdf:resource="#Cellular_process"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >cell communication
+
+    * Accession: GO:0007154
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o Any process that mediates interactions between a cell and its surroundings. Encompasses interactions such as signaling or attachment between one cell and another cell, between a cell and an extracellular matrix, or between a cell and any other aspect of its environment.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Cell_differentiation -->
+
+    <owl:Class rdf:about="#Cell_differentiation">
+        <rdfs:subClassOf rdf:resource="#Cellular_process"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >cell differentiation
+
+    * Accession: GO:0030154
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o The process whereby relatively unspecialized cells, e.g. embryonic or regenerative cells, acquire specialized structural and/or functional features that characterize the cells, tissues, or organs of the mature organism or some other relatively stable phase of the organism&#39;s life history. Differentiation includes the processes involved in commitment of a cell to a specific fate.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Cell_recognition -->
+
+    <owl:Class rdf:about="#Cell_recognition">
+        <rdfs:subClassOf rdf:resource="#Cellular_process"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >cell recognition
+
+    * Accession: GO:0008037
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o The process by which a cell in a multicellular organism interprets its surroundings.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Cell_stimulation -->
+
+    <owl:Class rdf:about="#Cell_stimulation">
+        <rdfs:subClassOf rdf:resource="#Cellular_process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Cellular_physiological_process -->
+
+    <owl:Class rdf:about="#Cellular_physiological_process">
+        <rdfs:subClassOf rdf:resource="#Cellular_process"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >cellular physiological process
+
+    * Accession: GO:0050875
+    * Ontology: biological_process
+    * Synonyms:
+          o narrow: cell growth and/or maintenance
+          o alt_id: GO:0008151
+          o exact: cell physiology
+    * Definition:
+          o The processes pertinent to the integrated function of a cell.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Cellular_process -->
+
+    <owl:Class rdf:about="#Cellular_process">
+        <rdfs:subClassOf rdf:resource="#Biological_process"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >cellular process
+
+    * Accession: GO:0009987
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o Processes that are carried out at the cellular level, but are not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Correlation -->
+
+    <owl:Class rdf:about="#Correlation"/>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#DNA_demethylation -->
+
+    <owl:Class rdf:about="#DNA_demethylation">
+        <rdfs:subClassOf rdf:resource="#DNA_modification"/>
+        <rdfs:comment
+            >comment &quot;DNA demethylation
+
+    * Accession: GO:0080111
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o The removal of a methyl group from one or more nucleotides within an DNA molecule. [source: PMID:17208187]
+    * Comment: None&quot;
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#DNA_metabolism -->
+
+    <owl:Class rdf:about="#DNA_metabolism">
+        <rdfs:subClassOf rdf:resource="#Metabolism"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >DNA metabolism
+
+    * Accession: GO:0006259
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o The chemical reactions involving DNA, deoxyribonucleic acid, one of the two main types of nucleic acid, consisting of a long, unbranched macromolecule formed from one, or more commonly, two, strands of linked deoxyribonucleotides.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#DNA_methylation -->
+
+    <owl:Class rdf:about="#DNA_methylation">
+        <rdfs:subClassOf rdf:resource="#DNA_modification"/>
+        <rdfs:comment
+            >comment &quot;DNA methylation
+
+    * Accession: GO:0006306
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o The covalent transfer of a methyl group to either N-6 of adenine or C-5 or N-4 of cytosine. [source: GOC:ems, ISBN:0198506732] 
+    * Comment: None&quot;
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#DNA_modification -->
+
+    <owl:Class rdf:about="#DNA_modification">
+        <rdfs:subClassOf rdf:resource="#DNA_metabolism"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >DNA modification
+
+    * Accession: GO:0006304
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o The covalent or conformational alteration of one or more nucleotide sites in DNA, resulting in a change in its properties.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#DNA_recombination -->
+
+    <owl:Class rdf:about="#DNA_recombination">
+        <rdfs:subClassOf rdf:resource="#DNA_metabolism"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >DNA recombination
+
+    * Accession: GO:0006310
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o The processes by which a new genotype is formed by reassortment of genes resulting in gene combinations different from those that were present in the parents. In eukaryotes genetic recombination can occur by chromosome assortment, intrachromosomal recombination, or nonreciprocal interchromosomal recombination. Intrachromosomal recombination occurs by crossing over. In bacteria it may occur by genetic transformation, conjugation, transduction, or F-duction.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Gene_expression -->
+
+    <owl:Class rdf:about="#Gene_expression">
+        <rdfs:subClassOf rdf:resource="#Metabolism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Initiation_of_viral_infection -->
+
+    <owl:Class rdf:about="#Initiation_of_viral_infection">
+        <rdfs:subClassOf rdf:resource="#Viral_life_cycle"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >initiation of viral infection
+Accession: GO:0019059 
+Ontology: biological_process 
+Synonyms: None 
+Definition: 
+Processes involved in the start of virus infection of cells.
+Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Localization -->
+
+    <owl:Class rdf:about="#Localization">
+        <rdfs:subClassOf rdf:resource="#Physiological_process"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >localization
+
+    * Accession: GO:0051179
+    * Ontology: biological_process
+    * Synonyms:
+          o narrow: establishment and maintenance of cellular component location
+          o narrow: establishment and maintenance of substance location
+          o narrow: establishment and maintenance of substrate location
+          o exact: establishment and maintenance of localization
+          o exact: establishment and maintenance of position
+    * Definition:
+          o The processes by which a cell, a substance, or a cellular entity, such as a protein complex or organelle, is transported to, and/or maintained in, a specific location.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Metabolism -->
+
+    <owl:Class rdf:about="#Metabolism">
+        <rdfs:subClassOf rdf:resource="#Physiological_process"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >metabolism
+Accession: GO:0008152 
+Ontology: biological_process 
+Synonyms: 
+narrow: fat body metabolism (sensu Insecta) 
+narrow: metabolism resulting in cell growth 
+exact: metabolic process 
+Definition: 
+Processes that cause many of the chemical changes in living organisms, including anabolism and catabolism. Metabolic processes typically transform small molecules, but also include macromolecular processes such as DNA repair and replication, and protein synthesis and degradation.
+Comment: 
+Note that metabolic processes do not include single functions or processes such as protein-protein interactions, protein-nucleic acids, nor receptor-ligand interactions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Mutagenesis -->
+
+    <owl:Class rdf:about="#Mutagenesis">
+        <rdfs:subClassOf rdf:resource="#DNA_metabolism"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Accession
+    GO:0006280
+Ontology
+    biological process
+Synonyms
+    None
+Definition
+    The process by which genetic material undergoes a detectable and heritable structural change. There are three categories of mutation: genome mutations, involving addition or subtraction of one or more whole chromosomes; chromosome mutations, which alter the structure of chromosomes; and gene mutations, where the structure of a gene is altered at the molecular level. [source: ISBN:0198506732] 
+Comment
+    None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Negative_regulation -->
+
+    <owl:Class rdf:about="#Negative_regulation">
+        <rdfs:subClassOf rdf:resource="#Regulation"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >negative regulation of biological process
+Accession: GO:0048519 
+Ontology: biological_process 
+Synonyms: None 
+Definition: 
+Any process that stops, prevents or reduces the rate, frequency or extent of a biological process. Biological processes are regulated by many means; examples include the control of gene expression, protein modification or interaction with a protein or substrate molecule.
+Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Physiological_process -->
+
+    <owl:Class rdf:about="#Physiological_process">
+        <rdfs:subClassOf rdf:resource="#Biological_process"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >physiological process
+
+    * Accession: GO:0007582
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o Those processes specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Positive_regulation -->
+
+    <owl:Class rdf:about="#Positive_regulation">
+        <rdfs:subClassOf rdf:resource="#Regulation"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >positive regulation of biological process
+Accession: GO:0048518 
+Ontology: biological_process 
+Synonyms: None 
+Definition: 
+Any process that activates or increases the rate, frequency or extent of a biological process. Biological processes are regulated by many means; examples include the control of gene expression, protein modification or interaction with a protein or substrate molecule.
+Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_amino_acid_acetylation -->
+
+    <owl:Class rdf:about="#Protein_amino_acid_acetylation">
+        <rdfs:subClassOf rdf:resource="#Protein_modification"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >protein amino acid acetylation
+
+    * Accession: GO:0006473
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o The addition of an acetyl group to a protein amino acid. An acetyl group is CH3CO-, derived from acetic [ethanoic] acid.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_amino_acid_deacetylation -->
+
+    <owl:Class rdf:about="#Protein_amino_acid_deacetylation">
+        <rdfs:subClassOf rdf:resource="#Protein_modification"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >protein amino acid deacetylation
+
+    * Accession: GO:0006476
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o The removal of an acetyl group from a protein amino acid. An acetyl group is CH3CO-, derived from acetic [ethanoic] acid.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_amino_acid_deglycosylation -->
+
+    <owl:Class rdf:about="#Protein_amino_acid_deglycosylation">
+        <rdfs:subClassOf rdf:resource="#Protein_modification"/>
+        <rdfs:comment
+            >glycoprotein deglycosylation
+
+    * Accession: GO:0006517
+    * Ontology: biological_process
+    * Synonyms: exact: glycoprotein deglycosylation
+    * Definition:
+          o The removal of sugar residues from a glycosylated protein. [source: GOC:mah]
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_amino_acid_dehydroxylation -->
+
+    <owl:Class rdf:about="#Protein_amino_acid_dehydroxylation">
+        <rdfs:subClassOf rdf:resource="#Protein_modification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_amino_acid_demethylation -->
+
+    <owl:Class rdf:about="#Protein_amino_acid_demethylation">
+        <rdfs:subClassOf rdf:resource="#Protein_modification"/>
+        <rdfs:comment
+            >comment &quot;protein amino acid demethylation
+
+    * Accession: GO:0006482
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o The removal of a methyl group, from a protein amino acid. A methyl group is derived from methane by the removal of a hydrogen atom. [source: GOC:mah] 
+    * Comment: None&quot;
+
+  </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_amino_acid_dephosphorylation -->
+
+    <owl:Class rdf:about="#Protein_amino_acid_dephosphorylation">
+        <rdfs:subClassOf rdf:resource="#Protein_modification"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >protein amino acid dephosphorylation
+
+    * Accession: GO:0006470
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o The process of removing one or more phosphoric residues from a protein.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_amino_acid_deubiquitination -->
+
+    <owl:Class rdf:about="#Protein_amino_acid_deubiquitination">
+        <rdfs:subClassOf rdf:resource="#Protein_modification"/>
+        <rdfs:comment
+            >comment &quot;protein deubiquitination
+
+    * Accession: GO:0016579
+    * Ontology: biological_process
+    * Synonyms:
+          o alt_id: GO:0006514
+          o exact: deubiquitination
+          o exact: protein deubiquitinylation
+          o exact: protein deubiquitylation
+    * Definition:
+          o The removal of one or more ubiquitin moieties from a protein.
+    * Comment: None&quot;^^string</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_amino_acid_glycosylation -->
+
+    <owl:Class rdf:about="#Protein_amino_acid_glycosylation">
+        <rdfs:subClassOf rdf:resource="#Protein_modification"/>
+        <rdfs:comment
+            >protein amino acid glycosylation
+
+    * Accession: GO:0006486
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o A protein modification process that results in the addition of a sugar unit to a protein amino acid, e.g. the addition of glycan chains to proteins. [source: http://cancerweb.ncl.ac.uk/]
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_amino_acid_hydroxylation -->
+
+    <owl:Class rdf:about="#Protein_amino_acid_hydroxylation">
+        <rdfs:subClassOf rdf:resource="#Protein_modification"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >protein amino acid hydroxylation
+
+    * Accession: GO:0018126
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o The addition of a hydroxy group to a protein amino acid. [source: GOC:ai]
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_amino_acid_methylation -->
+
+    <owl:Class rdf:about="#Protein_amino_acid_methylation">
+        <rdfs:subClassOf rdf:resource="#Protein_modification"/>
+        <rdfs:comment
+            >protein amino acid methylation
+
+    * Accession: GO:0006479
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o The addition of a methyl group to a protein amino acid. A methyl group is derived from methane by the removal of a hydrogen atom. [source: GOC:ai]
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_amino_acid_phosphorylation -->
+
+    <owl:Class rdf:about="#Protein_amino_acid_phosphorylation">
+        <rdfs:subClassOf rdf:resource="#Protein_modification"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >protein amino acid phosphorylation
+
+    * Accession: GO:0006468
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o The process of introducing a phosphoric group on to a protein.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_amino_acid_ubiquitination -->
+
+    <owl:Class rdf:about="#Protein_amino_acid_ubiquitination">
+        <rdfs:subClassOf rdf:resource="#Protein_modification"/>
+        <rdfs:comment
+            >comment &quot;protein ubiquitination
+
+    * Accession: GO:0016567
+    * Ontology: biological_process
+    * Synonyms:
+          o related: ubiquitin
+          o exact: protein ubiquitinylation
+          o exact: protein ubiquitylation
+    * Definition:
+          o The process by which one or more ubiquitin moieties are added to a protein.
+    * Comment: None&quot;^^string</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_catabolism -->
+
+    <owl:Class rdf:about="#Protein_catabolism">
+        <rdfs:subClassOf rdf:resource="#Protein_metabolism"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >protein catabolism
+
+    * Accession: GO:0030163
+    * Ontology: biological_process
+    * Synonyms:
+          o narrow: pheromone catabolism (sensu Saccharomyces)
+          o exact: protein breakdown
+          o exact: protein degradation
+    * Definition:
+          o The breakdown into simpler components of a protein by the destruction of the native, active configuration, with or without the hydrolysis of peptide bonds.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_metabolism -->
+
+    <owl:Class rdf:about="#Protein_metabolism">
+        <rdfs:subClassOf rdf:resource="#Metabolism"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >protein metabolism
+
+    * Accession: GO:0019538
+    * Ontology: biological_process
+    * Synonyms:
+          o exact: protein metabolism and modification
+          o alt_id: GO:0006411
+    * Definition:
+          o The chemical reactions involving a specific protein, rather than of proteins in general. Includes protein modification.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_modification -->
+
+    <owl:Class rdf:about="#Protein_modification">
+        <rdfs:subClassOf rdf:resource="#Protein_metabolism"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >protein modification
+* Accession: GO:0006464
+* Ontology: biological_process
+* Synonyms: o related: protein tagging activity o narrow: 
+    protein-pyrroloquinoline-quinone linkage * Definition: o The covalent or 
+    conformational alteration of one or more amino acid residues within a 
+    protein, resulting in a change in the properties of that protein. * 
+    Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Protein_processing -->
+
+    <owl:Class rdf:about="#Protein_processing">
+        <rdfs:subClassOf rdf:resource="#Protein_modification"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Accession
+    GO:0016485
+Ontology
+    biological process
+Synonyms
+    None
+Definition
+    The post translational modification of a protein, particularly secretory proteins and proteins targeted for membranes or specific cellular locations. [source: GOC:jl, http://cancerweb.ncl.ac.uk] 
+Comment
+    None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#RNA_metabolism -->
+
+    <owl:Class rdf:about="#RNA_metabolism">
+        <rdfs:subClassOf rdf:resource="#Metabolism"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >RNA metabolism
+
+    * Accession: GO:0016070
+    * Ontology: biological_process
+    * Synonyms: None
+    * Definition:
+          o The chemical reactions involving RNA, ribonucleic acid, one of the two main type of nucleic acid, consisting of a long, unbranched macromolecule formed from ribonucleotides joined in 3&#39;,5&#39;-phosphodiester linkage.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Regulation -->
+
+    <owl:Class rdf:about="#Regulation">
+        <rdfs:subClassOf rdf:resource="#Biological_process"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >regulation of biological process
+Accession: GO:0050789 
+Ontology: biological_process 
+Synonyms: broad: regulation 
+Definition: 
+Any process that modulates the frequency, rate or extent of a biological process. Biological processes are regulated by many means; examples include the control of gene expression, protein modification or interaction with a protein or substrate molecule.
+Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Transcription -->
+
+    <owl:Class rdf:about="#Transcription">
+        <rdfs:subClassOf rdf:resource="#Metabolism"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >transcription
+Accession: GO:0006350 
+Ontology: biological_process 
+Synonyms: None 
+Definition: 
+The synthesis of either RNA on a template of DNA or DNA on a template of RNA.
+Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Translation -->
+
+    <owl:Class rdf:about="#Translation">
+        <rdfs:subClassOf rdf:resource="#Protein_metabolism"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >translation
+
+    * Accession: GO:0043037
+    * Ontology: biological_process
+    * Synonyms: exact: protein translation
+    * Definition:
+          o A ribosome-mediated process in which the information in messenger RNA (mRNA) is used to specify the sequence of amino acids in a polypeptide chain.
+    * Comment: None</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#Viral_life_cycle -->
+
+    <owl:Class rdf:about="#Viral_life_cycle">
+        <rdfs:subClassOf rdf:resource="#Biological_process"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >viral life cycle
+
+    * Accession: GO:0016032
+    * Ontology: biological_process
+    * Synonyms:
+          o related: viral infection
+          o related: virulence
+          o exact: viral replication cycle
+    * Definition:
+          o A set of processes by which a virus reproduces. Usually, this is by infection of a host cell, replication of the viral genome, and assembly of progeny virus particles. In some cases the viral genetic material may integrate into the host genome and only subsequently, under particular circumstances, &#39;complete&#39; its life cycle.
+    * Comment:
+          o See also the biological process terms &#39;viral infectious cycle ; GO\:0019058&#39; and &#39;lysogeny ; GO\:0030069&#39;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#protein_amino_acid_acetylation -->
+
+    <owl:Thing rdf:about="#protein_amino_acid_acetylation">
+        <rdf:type rdf:resource="#Protein_modification"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#protein_amino_acid_deacetylation -->
+
+    <owl:Thing rdf:about="#protein_amino_acid_deacetylation">
+        <rdf:type rdf:resource="#Protein_modification"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#protein_deubiquitination -->
+
+    <owl:Thing rdf:about="#protein_deubiquitination">
+        <rdf:type rdf:resource="#Protein_modification"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >protein deubiquitination
+
+    * Accession: GO:0016579
+    * Ontology: biological_process
+    * Synonyms:
+          o alt_id: GO:0006514
+          o exact: deubiquitination
+          o exact: protein deubiquitinylation
+          o exact: protein deubiquitylation
+    * Definition:
+          o The removal of one or more ubiquitin moieties from a protein.
+    * Comment: None</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAevent.owl#protein_ubiquitination -->
+
+    <Protein_modification rdf:about="#protein_ubiquitination">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >protein ubiquitination
+
+    * Accession: GO:0016567
+    * Ontology: biological_process
+    * Synonyms:
+          o related: ubiquitin
+          o exact: protein ubiquitinylation
+          o exact: protein ubiquitylation
+    * Definition:
+          o The process by which one or more ubiquitin moieties are added to a protein.
+    * Comment: None</rdfs:comment>
+    </Protein_modification>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#protein_amino_acid_deacetylation"/>
+            <rdf:Description rdf:about="#protein_ubiquitination"/>
+            <rdf:Description rdf:about="#protein_deubiquitination"/>
+            <rdf:Description rdf:about="#protein_amino_acid_acetylation"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

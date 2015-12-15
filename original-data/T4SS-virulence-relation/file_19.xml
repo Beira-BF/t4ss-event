@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Annotation PUBLIC "-//GENIA//DTD GENIA ANNOTATION EVENT 2.0//EN" "../GENIAtypes/GENIA_event_20.dtd">
+<Annotation created="26/03/2010" creator="Tomoko Ohta" annotates="http://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;retmode=xml&amp;rettype=medline&amp;id=000000000">
+<PubmedArticleSet>
+<PubmedArticle>
+<MedlineCitation>
+<PMID>000000000</PMID>
+<Article>
+<ArticleTitle>
+<sentence id="S1">Partners-in-infection : host proteins involved in the transformation of plant cells by Agrobacterium</sentence>
+</ArticleTitle>
+<Abstract>
+<AbstractText>
+<sentence id="S2">Genetic modification of plant cells by Agrobacterium is the only known natural example of <term id="T1" sem="Biological_process">DNA transport</term> between kingdoms .</sentence>
+<sentence id="S3">While the bacterial factors involved in Agrobacterium infection have been relatively well characterized , studies of their host cellular partners are just beginning .</sentence>
+<sentence id="S4">Here , we describe the plant cell factors that might participate in Agrobacterium-mediated genetic transformation and discuss their possible roles in this process .</sentence>
+<sentence id="S5">Because Agrobacterium probably adapts existing cellular processes for its life cycle , identifying the host factors participating in Agrobacterium infection might contribute to a better understanding of such basic biological processes as cell communication , <term id="T2" sem="Biological_process">intracellular transport</term> and DNA repair and recombination as well as help expand the host range of Agrobacterium as a genetic engineering tool .</sentence>
+</AbstractText>
+</Abstract>
+</Article>
+</MedlineCitation>
+</PubmedArticle>
+</PubmedArticleSet>
+</Annotation>

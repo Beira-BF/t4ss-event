@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Annotation PUBLIC "-//GENIA//DTD GENIA ANNOTATION EVENT 2.0//EN" "../GENIAtypes/GENIA_event_20.dtd">
+<Annotation created="26/03/2010" creator="Tomoko Ohta" annotates="http://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;retmode=xml&amp;rettype=medline&amp;id=000000000">
+<PubmedArticleSet>
+<PubmedArticle>
+<MedlineCitation>
+<PMID>000000000</PMID>
+<Article>
+<ArticleTitle>
+<sentence id="S1">Phylogenetic Diversity of the Rickettsiae</sentence>
+</ArticleTitle>
+<Abstract>
+<AbstractText>
+<sentence id="S2">Small subunit rRNA sequences have been determined for representative strains of six species of the family Rickettsiaceae : Rickettsia rickettsii , Rickettsia prowazekii , Rickettsia typhi , Coxiella burnetii , Ehrlichia risticii , and Wolbachia persica .</sentence>
+<sentence id="S3">The relationships among these sequences and those of other eubacteria show that all members of the family Rickettsiaceae belong to the so-called purple bacterial phylum .</sentence>
+<sentence id="S4">The three representatives of the genus Rickettsia form a tight monophyletic cluster within the alpha subdivision of the purple bacteria .</sentence>
+<sentence id="S5">E. risticii also belongs to the alpha subdivision and shows a distant yet specific relationship to the genus Rickettsia .</sentence>
+<sentence id="S6">However , the family as a whole is not monophyletic , in that C. burnetii and W. persica are members of the gamma subdivision .</sentence>
+<sentence id="S7">The former appears to show a specific , but rather distant , relationship to the genus Legionella .</sentence>
+</AbstractText>
+</Abstract>
+</Article>
+</MedlineCitation>
+</PubmedArticle>
+</PubmedArticleSet>
+</Annotation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Annotation PUBLIC "-//GENIA//DTD GENIA ANNOTATION EVENT 2.0//EN" "../GENIAtypes/GENIA_event_20.dtd">
+<Annotation created="26/03/2010" creator="Tomoko Ohta" annotates="http://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;retmode=xml&amp;rettype=medline&amp;id=000000000">
+<PubmedArticleSet>
+<PubmedArticle>
+<MedlineCitation>
+<PMID>000000000</PMID>
+<Article>
+<ArticleTitle>
+<sentence id="S1">Relationships between a new <term id="T3" sem="Cell_component">type IV secretion system</term> and the <term id="T4" sem="Cell_component">icm/dot virulence system</term> of Legionella pneumophila</sentence>
+</ArticleTitle>
+<Abstract>
+<AbstractText>
+<sentence id="S2">We describe here a Legionella pneumophila <term id="T5" sem="Cell_component">type IV secretion system</term> that is distinct from the previously described <term id="T6" sem="Cell_component">icm/dot system</term> .</sentence>
+<sentence id="S3">This <term id="T7" sem="Cell_component">type IV secretion system</term> contains 11 genes ( lvh ) homologous to genes of other <term id="T8" sem="Cell_component">type IV secretion systems</term> , arranged in a similar manner .</sentence>
+<sentence id="S4">The lvh genes were found to be located on a DNA island with a GC content higher than the L. pneumophila <term id="T9" sem="Cell_component">chromosome</term> .</sentence>
+<sentence id="S5">In contrast to the <term id="T10" sem="Cell_component">icm/dot system</term> that was shown to be required for intracellular growth in HL-60-derived human macrophages and Acanthamoeba castellanii , the <term id="T11" sem="Cell_component">lvh system</term> was found to be dispensable for intracellular growth in these two hosts .</sentence>
+<sentence id="S6">The <term id="T12" sem="Cell_component">lvh system</term> was found to be partially required for RSF1010 <term id="T1" sem="Biological_process">conjugation</term> , a process that was previously shown to be completely dependent on several icm/dot genes .</sentence>
+<sentence id="S7">However , results obtained from analysis of double mutants in the icm/dot genes and the lvh genes revealed that lvh genes can substitute for some components of the <term id="T13" sem="Cell_component">icm/dot system</term> for RSF1010 <term id="T2" sem="Biological_process">conjugation</term> , but not for intracellular growth .</sentence>
+<sentence id="S8">These results indicate that components of the <term id="T14" sem="Cell_component">icm/dot system</term> and components of the <term id="T15" sem="Cell_component">lvh type IV secretion system</term> are able to interact with one another .</sentence>
+<sentence id="S9"></sentence>
+</AbstractText>
+</Abstract>
+</Article>
+</MedlineCitation>
+</PubmedArticle>
+</PubmedArticleSet>
+</Annotation>

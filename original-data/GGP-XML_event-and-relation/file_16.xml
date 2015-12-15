@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<!DOCTYPE Annotation PUBLIC "-//GENIA//DTD GENIA ANNOTATION EVENT 2.0//EN" "../GENIAtypes/GENIA_event_20.dtd">
+<Annotation annotates="http://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;retmode=xml&amp;rettype=medline&amp;id=000000000" created="26/03/2010" creator="Tomoko Ohta"><PubmedArticleSet><PubmedArticle><MedlineCitation>
+<PMID>000000000</PMID>
+<Article>
+<ArticleTitle>
+<sentence id="S1">Interactions of <gene-or-gene-product id="G1">VirB9</gene-or-gene-product> , <gene-or-gene-product id="G2">-10</gene-or-gene-product> , and <gene-or-gene-product id="G3">-11</gene-or-gene-product> with the Membrane Fraction of Agrobacterium tumefaciens : Solubility Studies Provide Evidence for Tight Associations</sentence>
+</ArticleTitle>
+<Abstract>
+<AbstractText>
+<sentence id="S2">The eleven predicted gene products of the Agrobacterium tumefaciens virB operon are believed to form a <term id="T7" sem="Cell_component">transmembrane pore complex</term> through which <term id="T1" sem="Biological_process"><term id="N1" sem="Cell_component">T-DNA</term> export</term> occurs .</sentence>
+<event id="E1">
+<type class="Localization" idref="T1"/>
+<theme idref="N1"/></event>
+<sentence id="S3">The <gene-or-gene-product id="G5">VirB10</gene-or-gene-product> protein is required for <term id="T2" sem="Biological_process">virulence</term> and is a <term id="T8" sem="Cell_component">component</term> of an aggregate associated with the <term id="T9" sem="Cell_component">membrane</term> fraction of A. tumefaciens .</sentence>
+<event id="E6">
+<type class="Positive_regulation"/>
+<theme idref="T2"/>
+<cause idref="G5"/>
+<clue>The VirB10 protein <clueType>is required</clueType> <linkTheme>for</linkTheme> virulence and is a component of an aggregate associated with the membrane fraction of A. tumefaciens .</clue>
+</event>
+<sentence id="S4">Removal of the putative membrane-spanning domain ( amino acids 22 through 55 ) disrupts the membrane topology of <gene-or-gene-product id="G6">VirB10</gene-or-gene-product> ( J . E . Ward , E . M . Dale , E . W . Nester , and A . N . Binns , J . Bacteriol. 172 : 5200-5210 , 1990 ) .</sentence>
+<sentence id="S5">Deletion of the sequences encoding amino acids 22 to 55 abolishes the ability of plasmid-borne <gene-or-gene-product id="G7">virB10</gene-or-gene-product> to complement a null mutation in the <gene-or-gene-product id="G8">virB10</gene-or-gene-product> gene , suggesting that the proper topology of <gene-or-gene-product id="G9">VirB10</gene-or-gene-product> in the <term id="T10" sem="Cell_component">membrane</term> may indeed play a crucial role in <term id="T3" sem="Biological_process"><term id="T16" sem="Cell_component">T-DNA</term> transfer</term> to the <term id="N3" sem="Cell_natural">plant cell</term> .</sentence>
+<event id="E2">
+<type class="Localization" idref="T3"/>
+<theme idref="T16"/>
+<locTo idref="N3"/></event>
+<event id="E5">
+<type class="Regulation"/>
+<theme idref="E2"/>
+<cause idref="G9"/></event>
+<sentence id="S6">Western blot ( immunoblot ) analysis indicated that the observed loss of <term id="T4" sem="Biological_process">virulence</term> could not be attributed to a decrease in the steady-state levels of the mutant <gene-or-gene-product id="G10">VirB10</gene-or-gene-product> protein .</sentence>
+<sentence id="S7">Although the deletion of the single transmembrane domain would be expected to perturb <term id="T5" sem="Biological_process"><term id="N2" sem="Cell_component">membrane</term> association</term> , <gene-or-gene-product id="G11">VirB10</gene-or-gene-product> 22-55 was found exclusively in the membrane fraction .</sentence>
+<event id="E3">
+<type class="Localization" idref="T5"/>
+<theme idref="G11"/>
+<locTo idref="N2"/></event>
+<sentence id="S8">Urea extraction studies suggested that this <term id="T6" sem="Biological_process">membrane localization</term> might be the result of a <term id="T11" sem="Cell_component">peripheral membrane</term> association ; however , the mutant protein was found in both inner and <term id="T12" sem="Cell_component">outer membrane</term> fractions separated by sucrose density gradient centrifugation .</sentence>
+<event id="E4">
+<type class="Localization" idref="T6"/></event>
+<sentence id="S9">Both wild-type <gene-or-gene-product id="G12">VirB10</gene-or-gene-product> and wild-type <gene-or-gene-product id="G13">VirB9</gene-or-gene-product> were only partially removed from the <term id="T13" sem="Cell_component">membranes</term> by extraction with 1 % Triton X-100 , while <gene-or-gene-product id="G14">VirB5</gene-or-gene-product> and <gene-or-gene-product id="G15">VirB8</gene-or-gene-product> were Triton X-100 soluble .</sentence>
+<sentence id="S10"><gene-or-gene-product id="G16">VirB11</gene-or-gene-product> was stripped from the <term id="T14" sem="Cell_component">membranes</term> by 6 M urea but not by a more mild salt extraction .</sentence>
+<sentence id="S11">The fractionation patterns of <gene-or-gene-product id="G17">VirB9</gene-or-gene-product> , <gene-or-gene-product id="G18">VirB10</gene-or-gene-product> , and <gene-or-gene-product id="G19">VirB11</gene-or-gene-product> were not dependent on each other or on <gene-or-gene-product id="G20">VirB8</gene-or-gene-product> or <gene-or-gene-product id="G21">VirD4</gene-or-gene-product> .</sentence>
+<sentence id="S12">The observed tight associations of <gene-or-gene-product id="G22">VirB9</gene-or-gene-product> , <gene-or-gene-product id="G23">VirB10</gene-or-gene-product> , and <gene-or-gene-product id="G24">VirB11</gene-or-gene-product> with the membrane fraction support the notion that these proteins may exist as components of multiprotein pore complexes , perhaps spanning both the inner and <term id="T15" sem="Cell_component">outer membranes</term> of Agrobacterium cells .</sentence>
+<sentence id="S13"/></AbstractText>
+</Abstract></Article></MedlineCitation></PubmedArticle></PubmedArticleSet></Annotation>

@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY GENIAterm "http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#"
+     xml:base="http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl"
+     xmlns:GENIAterm="http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Amino_acid_compound -->
+
+    <owl:Class rdf:about="#Amino_acid_compound">
+        <rdfs:subClassOf rdf:resource="#Organic_compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Amino_acid_monomer -->
+
+    <owl:Class rdf:about="#Amino_acid_monomer">
+        <rdfs:subClassOf rdf:resource="#Amino_acid_compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Anatomy -->
+
+    <owl:Class rdf:about="#Anatomy"/>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Bacterium -->
+
+    <owl:Class rdf:about="#Bacterium">
+        <rdfs:subClassOf rdf:resource="#Unicellular_organism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Biological_process -->
+
+    <owl:Class rdf:about="#Biological_process">
+        <rdfs:subClassOf rdf:resource="#Other"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Body_region -->
+
+    <owl:Class rdf:about="#Body_region">
+        <rdfs:subClassOf rdf:resource="#Anatomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Carbohydrate -->
+
+    <owl:Class rdf:about="#Carbohydrate">
+        <rdfs:subClassOf rdf:resource="#Organic_compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Cell -->
+
+    <owl:Class rdf:about="#Cell">
+        <rdfs:subClassOf rdf:resource="#Anatomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Cell_component -->
+
+    <owl:Class rdf:about="#Cell_component">
+        <rdfs:subClassOf rdf:resource="#Anatomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Cell_cultured -->
+
+    <owl:Class rdf:about="#Cell_cultured">
+        <rdfs:subClassOf rdf:resource="#Cell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Cell_natural -->
+
+    <owl:Class rdf:about="#Cell_natural">
+        <rdfs:subClassOf rdf:resource="#Cell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Chemical -->
+
+    <owl:Class rdf:about="#Chemical">
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >It roughly corresponds to  the &quot;Chemicals and Drugs Category&quot; of MeSH excluding the &quot;Pharmaceutical Preparations&quot; and &quot;Chemical Actions and Uses&quot; sub-categories. The &quot;Elements&quot; category under &quot;Inorganic Chemicals&quot; category is separated out into an individual class, &quot;Element&quot;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Compound -->
+
+    <owl:Class rdf:about="#Compound">
+        <rdfs:subClassOf rdf:resource="#Chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#DNA -->
+
+    <owl:Class rdf:about="#DNA">
+        <rdfs:subClassOf rdf:resource="#Nucleic_acid_compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#DNA_domain_or_region -->
+
+    <owl:Class rdf:about="#DNA_domain_or_region">
+        <rdfs:subClassOf rdf:resource="#DNA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#DNA_family_or_group -->
+
+    <owl:Class rdf:about="#DNA_family_or_group">
+        <rdfs:subClassOf rdf:resource="#DNA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#DNA_molecule -->
+
+    <owl:Class rdf:about="#DNA_molecule">
+        <rdfs:subClassOf rdf:resource="#DNA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#DNA_substructure -->
+
+    <owl:Class rdf:about="#DNA_substructure">
+        <rdfs:subClassOf rdf:resource="#DNA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Diagnosis -->
+
+    <owl:Class rdf:about="#Diagnosis">
+        <rdfs:subClassOf rdf:resource="#Other"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Disease -->
+
+    <owl:Class rdf:about="#Disease">
+        <rdfs:subClassOf rdf:resource="#Other"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Element -->
+
+    <owl:Class rdf:about="#Element">
+        <rdfs:subClassOf rdf:resource="#Chemical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Experimental_method -->
+
+    <owl:Class rdf:about="#Experimental_method">
+        <rdfs:subClassOf rdf:resource="#Other"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Inorganic_compound -->
+
+    <owl:Class rdf:about="#Inorganic_compound">
+        <rdfs:subClassOf rdf:resource="#Compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Lipid -->
+
+    <owl:Class rdf:about="#Lipid">
+        <rdfs:subClassOf rdf:resource="#Organic_compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Molecular_function -->
+
+    <owl:Class rdf:about="#Molecular_function">
+        <rdfs:subClassOf rdf:resource="#Other"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Multicellular_organism -->
+
+    <owl:Class rdf:about="#Multicellular_organism">
+        <rdfs:subClassOf rdf:resource="#Organism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Multicellular_organism_genetically_modified -->
+
+    <owl:Class rdf:about="#Multicellular_organism_genetically_modified">
+        <rdfs:subClassOf rdf:resource="#Multicellular_organism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Multicellular_organism_natural -->
+
+    <owl:Class rdf:about="#Multicellular_organism_natural">
+        <rdfs:subClassOf rdf:resource="#Multicellular_organism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Nucleic_acid_compound -->
+
+    <owl:Class rdf:about="#Nucleic_acid_compound">
+        <rdfs:subClassOf rdf:resource="#Organic_compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Nucleotide -->
+
+    <owl:Class rdf:about="#Nucleotide">
+        <rdfs:subClassOf rdf:resource="#Nucleic_acid_compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Organic_compound -->
+
+    <owl:Class rdf:about="#Organic_compound">
+        <rdfs:subClassOf rdf:resource="#Compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Organic_compound_other -->
+
+    <owl:Class rdf:about="#Organic_compound_other">
+        <rdfs:subClassOf rdf:resource="#Organic_compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Organism -->
+
+    <owl:Class rdf:about="#Organism"/>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Other -->
+
+    <owl:Class rdf:about="#Other"/>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Peptide -->
+
+    <owl:Class rdf:about="#Peptide">
+        <rdfs:subClassOf rdf:resource="#Amino_acid_compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Polynucleotide -->
+
+    <owl:Class rdf:about="#Polynucleotide">
+        <rdfs:subClassOf rdf:resource="#Nucleic_acid_compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Protein -->
+
+    <owl:Class rdf:about="#Protein">
+        <rdfs:subClassOf rdf:resource="#Amino_acid_compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Protein_complex -->
+
+    <owl:Class rdf:about="#Protein_complex">
+        <rdfs:subClassOf rdf:resource="#Protein"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Protein_domain_or_region -->
+
+    <owl:Class rdf:about="#Protein_domain_or_region">
+        <rdfs:subClassOf rdf:resource="#Protein"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Protein_family_or_group -->
+
+    <owl:Class rdf:about="#Protein_family_or_group">
+        <rdfs:subClassOf rdf:resource="#Protein"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Protein_molecule -->
+
+    <owl:Class rdf:about="#Protein_molecule">
+        <rdfs:subClassOf rdf:resource="#Protein"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Protein_substructure -->
+
+    <owl:Class rdf:about="#Protein_substructure">
+        <rdfs:subClassOf rdf:resource="#Protein"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#RNA -->
+
+    <owl:Class rdf:about="#RNA">
+        <rdfs:subClassOf rdf:resource="#Nucleic_acid_compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#RNA_domain_or_region -->
+
+    <owl:Class rdf:about="#RNA_domain_or_region">
+        <rdfs:subClassOf rdf:resource="#RNA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#RNA_family_or_group -->
+
+    <owl:Class rdf:about="#RNA_family_or_group">
+        <rdfs:subClassOf rdf:resource="#RNA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#RNA_molecule -->
+
+    <owl:Class rdf:about="#RNA_molecule">
+        <rdfs:subClassOf rdf:resource="#RNA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#RNA_substructure -->
+
+    <owl:Class rdf:about="#RNA_substructure">
+        <rdfs:subClassOf rdf:resource="#RNA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Therapeutics -->
+
+    <owl:Class rdf:about="#Therapeutics">
+        <rdfs:subClassOf rdf:resource="#Other"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Tissue -->
+
+    <owl:Class rdf:about="#Tissue">
+        <rdfs:subClassOf rdf:resource="#Anatomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Tissue_cultured -->
+
+    <owl:Class rdf:about="#Tissue_cultured">
+        <rdfs:subClassOf rdf:resource="#Tissue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Tissue_natural -->
+
+    <owl:Class rdf:about="#Tissue_natural">
+        <rdfs:subClassOf rdf:resource="#Tissue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Unicellular_organism -->
+
+    <owl:Class rdf:about="#Unicellular_organism">
+        <rdfs:subClassOf rdf:resource="#Organism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/GENIAterm.owl#Virus -->
+
+    <owl:Class rdf:about="#Virus">
+        <rdfs:subClassOf rdf:resource="#Organism"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

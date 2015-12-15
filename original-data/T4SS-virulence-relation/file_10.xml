@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<!DOCTYPE Annotation PUBLIC "-//GENIA//DTD GENIA ANNOTATION EVENT 2.0//EN" "../GENIAtypes/GENIA_event_20.dtd">
+<Annotation annotates="http://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;retmode=xml&amp;rettype=medline&amp;id=000000000" created="26/03/2010" creator="Tomoko Ohta"><PubmedArticleSet><PubmedArticle><MedlineCitation>
+<PMID>000000000</PMID>
+<Article>
+<ArticleTitle>
+<sentence id="S1">The <term id="T1" sem="Bacterium">Agrobacterium tumefaciens</term> <gene-or-gene-product id="G1">virB4</gene-or-gene-product> Gene Product Is an Essential <term id="T5" sem="Biological_process">Virulence</term> Protein Requiring an Intact <term id="T16" sem="Molecular_function"><term id="N2" sem="Nucleotide">Nucleoside Triphosphate</term>-Binding</term> Domain</sentence>
+<relation id="R1">
+<SRtype/>
+<GGP idref="G1"/>
+<BioTerm idref="T5"/></relation>
+</ArticleTitle>
+<Abstract>
+<AbstractText>
+<sentence id="S2">Products of the -9.5-kb virB operon are proposed to direct the <term id="T6" sem="Biological_process">export</term> of <term id="T13" sem="Cell_component">T-DNA/protein complexes</term> across the <term id="T2" sem="Bacterium">Agrobacterium tumefaciens</term> envelope en route to plant cells .</sentence>
+<sentence id="S3">The presence of conserved nucleoside triphosphate <term id="T17" sem="Molecular_function">( NTP ) -binding</term> domains in <gene-or-gene-product id="G3">VirB4</gene-or-gene-product> and <gene-or-gene-product id="G4">VirB11</gene-or-gene-product> suggests that one or both proteins couple energy , via NTP hydrolysis , to <term id="T7" sem="Biological_process">T-complex transport</term> .</sentence>
+<sentence id="S4">To assess the importance of <gene-or-gene-product id="G5">VirB4</gene-or-gene-product> for <term id="T8" sem="Biological_process">virulence</term> , a nonpolar <gene-or-gene-product id="G6">virB4</gene-or-gene-product> null mutation was introduced into the <term id="T14" sem="Cell_component">pTiA6NC plasmid</term> of strain A348 .</sentence>
+<relation id="R6">
+<SRtype/>
+<GGP idref="G5"/>
+<BioTerm idref="T8"/></relation>
+<sentence id="S5">The 2.37-kb <gene-or-gene-product id="G7">virB4</gene-or-gene-product> coding sequence was deleted precisely by oligonucleotide-directed mutagenesis in vitro .</sentence>
+<sentence id="S6">The resulting delta<gene-or-gene-product id="G8">virB4</gene-or-gene-product> mutation was exchanged for the wild-type allele by two sequential recombination events with the counterselectable <term id="T3" sem="Bacterium">Bacillus subtilis</term> <gene-or-gene-product id="G10">sacB</gene-or-gene-product> gene .</sentence>
+<sentence id="S7">Two derivatives , A348deltaB4.4 and A348deltaB4.5 , sustained a nonpolar deletion of the wild-type <gene-or-gene-product id="G11">virB4</gene-or-gene-product> allele , as judged by Southern blot hybridization and immunoblot analyses with antibodies specific for <gene-or-gene-product id="G12">VirB4</gene-or-gene-product> , <gene-or-gene-product id="G13">VirB5</gene-or-gene-product> , <gene-or-gene-product id="G14">VirB10</gene-or-gene-product> , and <gene-or-gene-product id="G15">VirB1l</gene-or-gene-product> .</sentence>
+<sentence id="S8">Transcription of wild-type <gene-or-gene-product id="G16">virB4</gene-or-gene-product> from the lac promoter restored <term id="T9" sem="Biological_process">virulence</term> to the nonpolar null mutants on a variety of dicotyledonous species , establishing <gene-or-gene-product id="G18">virB4</gene-or-gene-product> as an essential <term id="T10" sem="Biological_process">virulence</term> gene .</sentence>
+<relation id="R2">
+<SRtype/>
+<GGP idref="G16"/>
+<BioTerm idref="T9"/></relation>
+<relation id="R3">
+<SRtype/>
+<GGP idref="G18"/>
+<BioTerm idref="T10"/></relation>
+<sentence id="S9">A substitution of glutamine for Lys-439 and a deletion of Gly-438 , Lys-439 , and Thr-440 within the glycine-rich <term id="T18" sem="Molecular_function">NTP-binding</term> domain ( Gly-Pro-Iso-Gly-Arg-Gly-Lys-Thr ) abolished complementation of A348deltaB4.4 or A348deltaB4.5 , demonstrating that an intact <term id="T19" sem="Molecular_function">NTP-binding</term> domain is critical for <gene-or-gene-product id="G21">VirB4</gene-or-gene-product> function .</sentence>
+<sentence id="S10">Merodiploids expressing both the mutant and wild-type <gene-or-gene-product id="G22">virB4</gene-or-gene-product> alleles exhibited lower <term id="T11" sem="Biological_process">virulence</term> than A348 , suggesting that <gene-or-gene-product id="G23">VirB4</gene-or-gene-product> , a <term id="T15" sem="Cell_component">cytoplasmic membrane</term> protein , may contribute as a homo- or heteromultimer to <term id="T4" sem="Bacterium">A. tumefaciens</term> <term id="T12" sem="Biological_process">virulence</term> .</sentence>
+<relation id="R4">
+<SRtype/>
+<GGP idref="G22"/>
+<BioTerm idref="T11"/></relation>
+<relation id="R5">
+<SRtype/>
+<GGP idref="G23"/>
+<BioTerm idref="T12"/></relation>
+</AbstractText>
+</Abstract></Article></MedlineCitation></PubmedArticle></PubmedArticleSet></Annotation>

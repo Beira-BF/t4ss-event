@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Annotation PUBLIC "-//GENIA//DTD GENIA ANNOTATION EVENT 2.0//EN" "../GENIAtypes/GENIA_event_20.dtd">
+<Annotation created="26/03/2010" creator="Tomoko Ohta" annotates="http://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;retmode=xml&amp;rettype=medline&amp;id=000000000">
+<PubmedArticleSet>
+<PubmedArticle>
+<MedlineCitation>
+<PMID>000000000</PMID>
+<Article>
+<ArticleTitle>
+<sentence id="S1">Altered states : Involvement of phosphorylated <gene-or-gene-product id="G1">CagA</gene-or-gene-product> in the induction of host cellular growth changes by <term id="T1" sem="Bacterium">Helicobacter pylori</term></sentence>
+</ArticleTitle>
+<Abstract>
+<AbstractText>
+<sentence id="S2"><term id="T2" sem="Bacterium">Helicobacter pylori</term> , present in half of the world&apos;s population , is a very successful pathogen .</sentence>
+<sentence id="S3">It can survive for decades in the human stomach with few obvious consequences to the host .</sentence>
+<sentence id="S4">However , it is also the cause of gastric diseases ranging from gastritis to ulcers to gastric cancer and has been classified a type 1 carcinogen by the World Health Organization .</sentence>
+<sentence id="S5">We have previously shown that phosphorylation of a 145-kDa protein and activation of signal transduction pathways are associated with the attachment of <term id="T3" sem="Bacterium">H. pylori</term> to gastric cells .</sentence>
+<sentence id="S6">Here we identify the 145-kDa protein as the <term id="T4" sem="Bacterium">H. pylori</term> <gene-or-gene-product id="G2">CagA</gene-or-gene-product> protein .</sentence>
+<sentence id="S7">We also show that <gene-or-gene-product id="G3">CagA</gene-or-gene-product> is necessary to induce a growth-factor-like phenotype ( hummingbird ) in host gastric cells similar to that induced by <gene-or-gene-product id="G4">hepatocyte growth factor</gene-or-gene-product> ( <gene-or-gene-product id="G5">HGF</gene-or-gene-product> ) .</sentence>
+<sentence id="S8">Additionally , we identify a second cellular phenotype induced after attachment by <term id="T5" sem="Bacterium">H. pylori</term> , which we call SFA ( stress fiber associated ) .</sentence>
+<sentence id="S9">SFA is <gene-or-gene-product id="G6">CagA</gene-or-gene-product> independent and is produced by type I and type II <term id="T6" sem="Bacterium">H. pylori</term> .</sentence>
+</AbstractText>
+</Abstract>
+</Article>
+</MedlineCitation>
+</PubmedArticle>
+</PubmedArticleSet>
+</Annotation>

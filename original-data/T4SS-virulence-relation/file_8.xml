@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<!DOCTYPE Annotation PUBLIC "-//GENIA//DTD GENIA ANNOTATION EVENT 2.0//EN" "../GENIAtypes/GENIA_event_20.dtd">
+<Annotation annotates="http://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;retmode=xml&amp;rettype=medline&amp;id=000000000" created="26/03/2010" creator="Tomoko Ohta"><PubmedArticleSet><PubmedArticle><MedlineCitation>
+<PMID>000000000</PMID>
+<Article>
+<ArticleTitle>
+<sentence id="S1">Bacterial <term id="T14" sem="Biological_process">secrets of secretion</term> : EuroConference on the biology of <term id="T15" sem="Biological_process">type IV secretion</term> processes</sentence>
+</ArticleTitle>
+<Abstract>
+<AbstractText>
+<sentence id="S2"><term id="T23" sem="Cell_component">Type IV secretion systems ( TFSS )</term> mediate <term id="T16" sem="Biological_process">secretion</term> or direct <term id="T17" sem="Biological_process">cell-to-cell transfer</term> of virulence factors ( proteins or protein-DNA complexes ) from many Gram-negative animal , human and plant pathogens , such as <term id="T1" sem="Bacterium">Agrobacterium tumefaciens</term> , <term id="T2" sem="Bacterium">Bartonella tribocorum</term> , <term id="T3" sem="Bacterium">Bordetella pertussis</term> , <term id="T4" sem="Bacterium">Brucella suis</term> , <term id="T5" sem="Bacterium">Helicobacter pylori</term> , <term id="T6" sem="Bacterium">Legionella pneumophila</term> and <term id="T7" sem="Bacterium">Rickettsia prowazekii</term> , into eukaryotic cells .</sentence>
+<sentence id="S3">Bacterial <term id="T18" sem="Biological_process">conjugation</term> is also classified as a TFSS-like process mediating the spread of broad-host-range plasmids between Gram-negative bacteria such as RP4 and R388 , which carry antibiotic resistance genes .</sentence>
+<sentence id="S4">Genetic , biochemical , cell biological and structural biology experiments led to significant progress in the understanding of several aspects of TFSS processes .</sentence>
+<sentence id="S5">X-ray crystallography revealed that homologues of the <term id="T8" sem="Bacterium">A. tumefaciens</term> inner membrane-associated proteins <gene-or-gene-product id="G3">VirB11</gene-or-gene-product> and <gene-or-gene-product id="G4">VirD4</gene-or-gene-product> from <term id="T9" sem="Bacterium">H. pylori</term> and R388 , respectively , may form channels for <term id="T19" sem="Biological_process">substrate translocation</term> or <term id="T20" sem="Biological_process">assembly</term> of the <term id="T24" sem="Cell_component">transmembrane TFSS machinery</term> .</sentence>
+<sentence id="S6">Biochemical and cell biological experiments revealed interactions between components of the periplasmic core components <gene-or-gene-product id="G5">VirB8</gene-or-gene-product> , <gene-or-gene-product id="G6">VirB9</gene-or-gene-product> and <gene-or-gene-product id="G7">VirB10</gene-or-gene-product> , which may form the <term id="T25" sem="Cell_component">translocation channel</term> .</sentence>
+<sentence id="S7">Analysis of <term id="T10" sem="Bacterium">A. tumefaciens</term> <term id="T21" sem="Biological_process">virulence</term> proteins <gene-or-gene-product id="G8">VirE2</gene-or-gene-product> and <gene-or-gene-product id="G9">VirF</gene-or-gene-product> suggested that the <term id="T22" sem="Biological_process">periplasmic translocation</term> route of the <gene-or-gene-product id="G10">pertussis toxin</gene-or-gene-product> from <term id="T11" sem="Bacterium">B. pertussis</term> may be more generally valid than previously anticipated .</sentence>
+<relation id="R1">
+<SRtype/>
+<GGP idref="G8"/>
+<BioTerm idref="T21"/></relation>
+<relation id="R2">
+<SRtype/>
+<GGP idref="G9"/>
+<BioTerm idref="T21"/></relation>
+<sentence id="S8">Secretion and modification of toxins from <term id="T12" sem="Bacterium">H. pylori</term> and <term id="T13" sem="Bacterium">L. pneumophila</term> profoundly affect host cell metabolism , thus entering the discipline of cellular microbiology .</sentence>
+<sentence id="S9">Finally , results from genome sequencing projects revealed the presence of up to three <term id="T26" sem="Cell_component">TFSS</term> in a single organism , and the analysis of their interplay and adaptation to different functions will be a future challenge .</sentence>
+<sentence id="S10"><term id="T27" sem="Cell_component">TFSS-carrying plasmids</term> were discovered in different ecosystems , suggesting that genetic exchange may speed up their evolution and adaptation to different cell-cell interactions .</sentence>
+<sentence id="S11"/></AbstractText>
+</Abstract></Article></MedlineCitation></PubmedArticle></PubmedArticleSet></Annotation>
